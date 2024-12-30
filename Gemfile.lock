@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/carofuerhunde/template.git
+  revision: f310af04d982e6a335ec024d49774cf5dce43349
+  specs:
+    jekyll-agency (1.1.0)
+      jekyll (>= 4.0, < 4.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -59,8 +66,6 @@ GEM
       safe_yaml (~> 1.0)
       terminal-table (>= 1.8, < 4.0)
       webrick (~> 1.7)
-    jekyll-agency (1.0.9)
-      jekyll (~> 4.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-sass-converter (3.0.0)
@@ -176,7 +181,7 @@ PLATFORMS
 DEPENDENCIES
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3.4)
-  jekyll-agency
+  jekyll-agency!
   jekyll-feed (~> 0.12)
   minima (~> 2.5)
   tzinfo (>= 1, < 3)
