@@ -2,9 +2,10 @@
 layout: page
 title: Preisübersicht
 ---
-Preise sind gültig ab 14. September 2024
 
 ## Ausbildungskosten
+
+Preise sind gültig ab 14. September 2024
 
 - **Privatstunde** (à 60 Minuten, abgerechnet 4/4): **76 €**  
   *(Privatunterricht ggf. zzgl. Fahrtkosten und Auslagen)*
@@ -58,5 +59,59 @@ Preise sind gültig ab 14. September 2024
 
 ---
 
-**Preisliste gültig ab dem 14. September 2024**  
-Diese Preisliste hebt vorhergehende Preiskalkulationen auf.
+## Preisliste Pension 2025
+
+_Gültig ab 01.01.2025_
+
+**Wichtig:** Termine werden vorab vereinbart. Ein Bringen und Abholen ist ausschließlich nach Absprache möglich.
+
+**Alle Preise enthalten die gesetzliche Mehrwertsteuer!**
+
+---
+
+### Preise
+
+#### Welpen und Hunde bis 7 Monate
+Zusätzliche Kosten: **20,00 €** zu den Betreuungskosten.
+
+#### Tagesbetreuung
+- **Bis 8 Stunden** (inkl. 2 Gassigänge): **42,00 €**
+- **Über 8 Stunden** (inkl. 3 Gassigänge): **50,00 €**
+
+#### Übernachtungsbetreuung
+- **24 Stunden** (inkl. 4 Gassigänge): **56,00 €**
+
+#### Hausbetreuung / Gassi-Service
+- **Pro 30 Minuten** (zzgl. Fahrtkosten): **50,00 €**
+
+---
+
+### Stornierungsbedingungen
+- **Vorzeitige Abholung:** Keine Erstattung.
+- **Stornierung 8 Tage vor der reservierten Zeit oder früher:** 50% der gesamten Buchung.
+- **Stornierung 7 Tage vor der reservierten Zeit oder später:** **32,00 € / Tag**.
+- **Verspäteter Beginn der Pensionszeit:** Volle Tageskosten ab reserviertem Buchungsdatum.
+- **Verspätete Abholung:** Verdopplung des Pensionssatzes pro Tag.
+
+---
+
+### Futterpauschale
+- **XL - XXL Hunde:** **4,50 € / Mahlzeit / Tag**
+- **M - L Hunde:** **3,50 € / Mahlzeit / Tag**
+- **XS - S Hunde:** **1,50 € / Mahlzeit / Tag**
+
+---
+
+### Hinweise
+Mit der Abgabe des Hundes (der Hunde) erkennt der Kunde die AGBs und Betriebsbedingungen vollumfänglich an. Hinweise zum Status des Hundes sind zwingend über den Betreuungsvertrag bekannt zu geben.
+
+---
+
+### Abhol- und Bringezeiten für Pensionshunde (ab 01.01.2025)
+- **Montag – Freitag:** 6:00 Uhr bis 15:00 Uhr
+- **Samstag:** 8:00 Uhr bis 9:30 Uhr
+
+**Bringen und Abholen außerhalb der Öffnungszeiten** (inkl. Sonn- und Feiertage):  
+Nur mit verbindlicher Terminvereinbarung. Zusätzliche Gebühr: **30,00 €**.
+
+**Sonderleistungen** (z. B. Medikamentengabe) werden nach Aufwand berechnet.
