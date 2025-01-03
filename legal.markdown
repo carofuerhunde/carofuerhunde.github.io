@@ -21,11 +21,9 @@ Mobil: +49 (0) 160 96211220
 ---
 
 #### 2. Hosting der Webseite  
-Diese Webseite wird auf **GitHub Pages** gehostet, einem Dienst der GitHub, Inc.  
-**Anbieter:**  
-GitHub, Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.  
+Unsere Webseite wird auf Azure Static Web Apps gehostet, einem Dienst der Microsoft Corporation, One Microsoft Way, Redmond, WA 98052-6399, USA. Dabei erfolgt die Speicherung und Verarbeitung von Daten auf Servern innerhalb der Europäischen Union.
 
-GitHub Pages verarbeitet Ihre IP-Adresse, um die Inhalte der Webseite bereitzustellen. Diese Daten werden in der Regel auf Servern in den USA gespeichert. Weitere Informationen finden Sie in der [Datenschutzerklärung von GitHub](https://docs.github.com/de/site-policy/privacy-policies/github-privacy-statement).  
+Azure Static Web Apps ist konform mit den geltenden Datenschutzgesetzen und bietet umfangreiche Sicherheitsmaßnahmen zum Schutz Ihrer Daten. Weitere Informationen zur Datenverarbeitung durch Microsoft finden Sie in der Datenschutzerklärung von Microsoft: https://privacy.microsoft.com/de-de/privacystatement.
 
 ---
 
@@ -62,8 +60,19 @@ Bitte kontaktieren Sie uns unter: [Deine E-Mail-Adresse].
 
 ---
 
-#### 7. Einbindung von Drittanbietern  
-Aktuell sind keine Einbindungen von Drittanbietern vorhanden
+#### 7. Einbindung von Drittanbietern
+##### eTermin
+Für die Terminbuchung auf unserer Webseite nutzen wir den Service eTermin, angeboten von eTermin GmbH, Im Wiesengrund 8, 8304 Wallisellen, Schweiz.
+
+Bei der Nutzung von eTermin werden die von Ihnen eingegebenen Daten (z. B. Name, E-Mail-Adresse, Telefonnummer) an die Server von eTermin übermittelt, um die Buchung zu ermöglichen. eTermin verarbeitet diese Daten in unserem Auftrag und gemäß den geltenden Datenschutzbestimmungen.
+
+Weitere Informationen zur Datenverarbeitung durch eTermin finden Sie in deren Datenschutzerklärung: https://www.etermin.net/datenschutz.
+
+##### Instagram
+Wir binden Inhalte des sozialen Netzwerks Instagram ein, angeboten von Meta Platforms Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland.
+Bei der Nutzung von Instagram-Inhalten auf unserer Webseite können Daten wie Ihre IP-Adresse oder Browserinformationen an Meta übermittelt werden. Wenn Sie in Ihrem Instagram-Konto eingeloggt sind, können diese Daten direkt mit Ihrem Profil verknüpft werden.
+
+Weitere Informationen zur Datenverarbeitung durch Instagram finden Sie in der Datenschutzerklärung von Meta: https://privacycenter.instagram.com/policy.
 
 ---
 
