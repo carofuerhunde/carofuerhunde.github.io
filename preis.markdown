@@ -59,7 +59,7 @@ Preise sind gültig ab 14. September 2024
 
 ---
 
-## Pension 2025
+## Pension
 
 _Gültig ab 01.01.2025_
 
