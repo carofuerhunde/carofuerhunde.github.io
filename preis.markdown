@@ -59,7 +59,7 @@ Preise sind gültig ab 14. September 2024
 
 ---
 
-## Preisliste Pension 2025
+## Pension 2025
 
 _Gültig ab 01.01.2025_
 
@@ -68,8 +68,6 @@ _Gültig ab 01.01.2025_
 **Alle Preise enthalten die gesetzliche Mehrwertsteuer!**
 
 ---
-
-### Preise
 
 #### Welpen und Hunde bis 7 Monate
 Zusätzliche Kosten: **20,00 €** zu den Betreuungskosten.
