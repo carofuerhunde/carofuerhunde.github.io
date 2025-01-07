@@ -5,7 +5,7 @@ title: Preisübersicht
 
 ## Ausbildungskosten
 
-Preise sind gültig ab 14. September 2024
+_Gültig ab 01.01.2025_
 
 - **Privatstunde** (à 60 Minuten, abgerechnet 4/4): **76 €**  
   *(Privatunterricht ggf. zzgl. Fahrtkosten und Auslagen)*
