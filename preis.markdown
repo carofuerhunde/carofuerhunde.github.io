@@ -63,7 +63,7 @@ _Gültig ab 01.01.2025_ - alle Preise inkl. Mehrwersteuer
 
 ## Pension
 
-_Gültig ab 01.01.2025_
+_Gültig ab 01.01.2025_ - alle Preise inkl. Mehrwertsteuer
 
 **Wichtig:** Termine werden vorab vereinbart. Ein Bringen und Abholen ist ausschließlich nach Absprache möglich.
 
