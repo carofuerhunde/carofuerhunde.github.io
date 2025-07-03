@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  branch: main # Branch to update (optional; defaults to master)
+  name: github
+  repo: carofuerhunde/carofuerhunde.github.io # The GitHub repository where the content will be stored
   
 media_folder: "_site/assets/img" # Media files will be stored in the repo under images/uploads
 
