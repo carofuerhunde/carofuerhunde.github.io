@@ -1,0 +1,62 @@
+<!-- Clients -->
+  <section class="py-5" id=""{{ site.data.sitetext.ueber-uns.section | default: clients }}>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center" style="color: #FF8800">
+          <h2 class="section-heading text-uppercase">{{ site.data.sitetext.ueber-uns.title }}</h2>
+          <h4 class="text-muted">{{ site.data.sitetext.ueber-uns.text }}</h4>
+        </div>
+        </div>
+    <div class="row">
+	  {% for wir in site.data.sitetext.ueber-uns.podcast %}
+    <div class="col-sm-3">
+      <p>{{ wir.spotify_embed }}</p>
+    </div>
+	  {% endfor %}
+      </div>
+    <div class="row">
+      <div class="col-sm-6 text-center">
+        <script type="text/javascript" src="assets/js/instafeed.js"></script>
+        <div id="instafeed"></div>
+        <script type="text/javascript">
+        var feed = new Instafeed({
+          accessToken: 'IGAAR7Y5xTvLJBZAFBCT2ludkhYY2NCT080NXFldDZACaS1MMzR3dTROTWJyaGtZAUmUxcndaS3VlQWVwV2JuQjQ4ZAnVsV3l2NUEySlk3QVZANd0phdENReERZAakd0OEN2d3Rxc3pjak9GaDc4VnlMQkJZAMVIyNzlJZAWdhRmUtNWJ2TQZDZD',
+          limit: 4
+        });
+        feed.run();
+        </script>
+      </div>
+      <div class="col-sm-6">
+        {% for social in site.data.sitetext.ueber-uns.socal-media %}
+          <div class="row mb-5">
+            <div class="col-lg-2 d-flex justify-content-center align-items-center text-center">
+              <a href="{{ social.url }}">
+                <i class="{{ social.icon }}" style="font-size: 3em;"></i>
+              </a>
+            </div>
+            <div class="col-lg-10 d-flex justify-content-center align-items-center text-center" margin="auto" style="color: #FF8800">
+              <p>{{ social.text }}</p>
+            </div>   
+          </div>
+        {% endfor %}
+        {% for info in site.data.sitetext.ueber-uns.allgemein %}
+          <div class="row mb-5">
+            <div class="col-lg-2 d-flex justify-content-center align-items-center text-center">    
+              {% if info.icon %}
+                  <a href="{{ info.url }}">
+                    <i class="{{ info.icon }}" style="font-size: 3em;"></i>
+                  </a>
+                {% else %}
+                  <a href="{{ info.url }}">
+                    <img src="{{ info.logo }}" width="65px" height="mx-auto" style="font-size: 3em;"></img>
+                  </a>
+              {% endif %}
+            </div>
+            <div class="col-lg-10 d-flex justify-content-center align-items-center text-center" margin="auto" style="color: #FF8800">
+              <p>{{ info.text }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+  </div>
+  </section>

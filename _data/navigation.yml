@@ -1,0 +1,28 @@
+nav:
+  - title: "Über uns"
+    section: ueber-uns
+
+  - title: "Services"
+    section: services
+
+  - title: "Team"
+    section: team
+
+  - title: "Kontakt"
+    section: contact
+
+  - title: "Welpen A-Z"
+    url: /welpen
+
+  - title: "Preise"
+    url: /preis
+
+  - title: "Shop"
+    url: https://shop.caro-fuer-hunde.de/
+
+  - title: "Termine & Workshops"
+    sublinks:
+      - title: "Termin buchen"
+        url: https://etermin.net/caro-fuer-hunde
+      - title: "Workshops"
+        url: /workshops
