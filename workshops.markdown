@@ -3,12 +3,6 @@ layout: page
 title: Workshops
 ---
 
----
-layout: page
-title: Workshops
-permalink: /workshops/
----
-
 ## Unsere Workshops
 
 Bei Caro für Hunde möchten wir Hund und Mensch dabei unterstützen, gemeinsam zu wachsen und neue Erfahrungen zu sammeln. Unsere Workshops bieten dir die Möglichkeit, intensiv an speziellen Themen zu arbeiten, neue Trainingsansätze kennenzulernen und dich mit anderen Hundebegeisterten auszutauschen. Egal ob du mit deinem Hund neue Sportarten ausprobieren oder eure Bindung vertiefen möchtest — hier findest du das passende Angebot!
@@ -18,13 +12,13 @@ Bei Caro für Hunde möchten wir Hund und Mensch dabei unterstützen, gemeinsam 
 #### **Dogroots Workshop Felda**
 📅 **Datum:** 17.07. bis 20.07.  
 📍 **Ort:** Felda  
-🤝 **In Kooperation mit:** Dogroots  
+🤝 **In Kooperation mit:** [Hundeschule Dogroots](https://www.hundeschule-dogroots.de/)   
 
 Ein intensiver Workshop, bei dem wir die Grundlagen der Kommunikation und des Miteinanders vertiefen. Ideal für alle, die noch tiefer in die Arbeit mit ihrem Hund eintauchen möchten.
 
 ---
 
-#### **Mondioring Workshop mit Lisa Iffland & Tom Andrykowski**
+#### **Mondioring Workshop mit [Lisa Iffland](https://www.instagram.com/iffi_bande/) & [Tom Andrykowski](https://www.instagram.com/t.andrykowski/)**
 📅 **Datum:** 22.08. bis 24.08.  
 📍 **Ort:** Caro Hundeschule  
 
@@ -35,7 +29,7 @@ Lerne von zwei erfahrenen Trainer:innen die spannende Sportart Mondioring kennen
 #### **Trainingsferien Tirol**
 📅 **Datum:** 22.09. bis 27.09.  
 📍 **Ort:** Tirol  
-🤝 **In Kooperation mit:** Hundeschule Dogroots  
+🤝 **In Kooperation mit:** [Hundeschule Dogroots](https://www.hundeschule-dogroots.de/)  
 
 Urlaub und Training in traumhafter Bergkulisse! Diese Woche ist perfekt, um gemeinsam an verschiedenen Themen zu arbeiten, Erholung zu finden und sich mit Gleichgesinnten auszutauschen.
 
@@ -43,4 +37,6 @@ Urlaub und Training in traumhafter Bergkulisse! Diese Woche ist perfekt, um geme
 
 ## Interesse geweckt?
 
-Bei Fragen oder zur Anmeldung kannst du uns gerne kontaktieren. Wir freuen uns, dich und deinen Hund bei einem unserer Workshops begrüßen zu dürfen!
+Bei Fragen oder zur Anmeldung kannst du uns gerne kontaktieren. Sende das [Anmeldeformular (PDF)](/assets/downloads/AnmeldungWorkshopsSeminare.pdf) einfach an info@caro.fuer-hunde.de
+
+Wir freuen uns, dich und deinen Hund bei einem unserer Workshops begrüßen zu dürfen!
