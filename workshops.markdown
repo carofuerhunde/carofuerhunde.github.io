@@ -3,12 +3,6 @@ layout: page
 title: Workshops
 ---
 
----
-layout: page
-title: Workshops
-permalink: /workshops/
----
-
 ## Unsere Workshops
 
 Bei Caro für Hunde möchten wir Hund und Mensch dabei unterstützen, gemeinsam zu wachsen und neue Erfahrungen zu sammeln. Unsere Workshops bieten dir die Möglichkeit, intensiv an speziellen Themen zu arbeiten, neue Trainingsansätze kennenzulernen und dich mit anderen Hundebegeisterten auszutauschen. Egal ob du mit deinem Hund neue Sportarten ausprobieren oder eure Bindung vertiefen möchtest — hier findest du das passende Angebot!
