@@ -37,6 +37,6 @@ Urlaub und Training in traumhafter Bergkulisse! Diese Woche ist perfekt, um geme
 
 ## Interesse geweckt?
 
-Bei Fragen oder zur Anmeldung kannst du uns gerne kontaktieren. Sende das [Anmeldeformular (PDF)](/assets/downloads/AnmeldungWorkshopsSeminare.pdf) einfach an info@caro.fuer-hunde.de
-
 Wir freuen uns, dich und deinen Hund bei einem unserer Workshops begrüßen zu dürfen!
+=======
+Bei Fragen oder zur Anmeldung kannst du uns gerne kontaktieren. Sende das [Anmeldeformular (PDF)](/assets/downloads/AnmeldungWorkshopsSeminare.pdf) einfach an info@caro.fuer-hunde.de. Wir freuen uns, dich und deinen Hund bei einem unserer Workshops begrüßen zu dürfen!
