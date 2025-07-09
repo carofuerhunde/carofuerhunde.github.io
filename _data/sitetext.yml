@@ -1,0 +1,176 @@
+header:
+    title:
+    text:
+    button:
+    buttonlink:
+
+services:
+    title: "Das Richtige für Sie und Ihren Vierbeiner"
+    text: "Von liebevoller Hundepension über Alltagstraining und Hundesport (Mondioring, IGP, Begleithund, Fit mit Hund) bis hin zu persönlichem Coaching – bei uns findet jeder Hund und Halter das passende Programm. Spaß und Erfolg garantiert!"
+    section: services
+    list:
+      - title: "persönliches Coaching"
+        desc: "Individuelles Training für Ihren Hund! Mit maßgeschneiderten Übungen und persönlicher Betreuung helfen wir Ihnen, spezifische Verhaltensprobleme zu lösen und die Bindung zu Ihrem Hund zu stärken. Flexibel, effektiv und auf Ihre Bedürfnisse abgestimmt."
+        icon: assets/img/services/Pisser.jpeg
+      - title: "Hundepension"
+        desc: "Ihr Hund verdient auch im Urlaub das Beste! Mit viel Auslauf, Spiel und individueller Betreuung sorgen wir dafür, dass sich Ihr Hund rundum wohlfühlt."
+        icon: assets/img/services/Tussi.jpeg       
+      - title: "Alltagstraining"
+        desc: "Gemeinsam meistern wir den Alltag! Mit gezieltem Training wird Ihr Hund zum entspannten Begleiter in jeder Situation. Spaß und Erfolg garantiert!"
+        icon: assets/img/services/Stinker.jpeg
+      - title: "Hundesport"
+        desc: "Entdecken Sie die Vielfalt! Ob Mondioring, IGP, Begleithund oder Fit mit Hund – bei uns findet jeder das passende Training. Spaß und Erfolg garantiert!"
+        icon: assets/img/services/Schlitzohr.jpeg
+      - title: "Workshops"
+        desc: "Ob auf unserem professionellen Trainingsgelände oder direkt bei Ihnen vor Ort – wir gestalten Workshops, die genau auf Ihre Bedürfnisse und die Ihres Hundes zugeschnitten sind. Von Grunderziehung und der Lösung von Verhaltensproblemen bis hin zu Hundesport-Training für aktive Vierbeiner: Gemeinsam fördern wir das Potenzial Ihres Hundes und sorgen für Spaß und Erfolg."
+        icon: assets/img/services/Freche.jpeg
+
+ueber-uns:
+    title: "Über uns"
+    text: "Wir können viel schreiben, aber besser du entdeckst uns selbst"
+    section: ueber-uns
+    podcast:
+      - title: "Uwe zu Gast bei \"Ja.Dann.Mit.Kopf\" Teil 1/2 "
+        spotify_embed: "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/episode/2Q8uuAj1soJ6lgVyVi2IvC?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+      - title: "Uwe zu Gast bei \"Ja.Dann.Mit.Kopf\" Teil 2/2"
+        spotify_embed: "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/episode/3dpqNsq37xv9tdACrLUmdU?utm_source=generator\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+    socal-media:
+      - title: "Instagram"
+        text: "Folge uns auf Instagram und bleibe immer auf dem Laufenden"
+        url: https://www.instagram.com/carohundeschule/
+        icon: fab fa-instagram
+      - title: "Facebook"
+        text: "Besuche uns auf Facebook und erfahre mehr über uns"
+        url: https://www.facebook.com/caro.hundeschule/
+        icon: fab fa-facebook-f
+    allgemein:
+      - title: "BHV - Berufsverband der Hundeerzieher/innen und Verhaltensberater/innen e.V."
+        text: "Wir sind Mitglied im BHV - Berufsverband der Hundeerzieher/innen und Verhaltensberater/innen e.V."
+        url: "https://www.hundeschulen.de/bhv.html"
+        logo: "assets/img/ueber-uns/bhv.png"
+      - title: "Lizensierter Hundetrainer"
+        text: "lizenziert nach  §11 des Tierschutzgesetzes"
+        url: "https://www.gesetze-im-internet.de/tierschg/__11.html"
+        icon: fa fa-paw
+      - title: "Park4Night"
+        text: > 
+          Wir sind auch Gastgeber bei Park4Night!
+
+          Gern stellen wir Ihnen einen Stellplatz für Ihr Wohnmobil oder Ihren Wohnwagen bereit.
+          Die Stellplätze sind mitten in der Natur, nur 15 Minuten zu Fuß bis zur S-Bahn und selbstverständlich sind Hunde bei uns willkommen. Max. 4 Stellplätze stehen zur Verfügung.
+          
+          Zudem können Sie folgende Services nutzen: Trinkwasser, Duschen, Abfall, Strom, Wifi und weiteres
+        url: "https://park4night.com/de/place/400440"
+        logo: "assets/img/ueber-uns/park4night.png"
+
+#    title: "Portfolio"
+#    text: "Lorem ipsum dolor sit amet consectetur."
+#    section: portfolio    
+
+# timeline:
+#     title: "About" 
+#     text: "Lorem ipsum timeline"
+#     section: timeline
+#     events:
+#       - title: "Our Humble Beginnings"
+#         year: "2009-2011"
+#         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+#         image: assets/img/timeline/1.jpg
+#         alt: 
+#         align: left
+#       - title: "An Agency is Born"
+#         year: "March 2011"
+#         desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
+#         image: assets/img/timeline/2.jpg
+#         alt: 
+#         align: right
+#       - title: "Jekyll Theme is created"
+#         year: "2019"
+#         desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
+#         image: assets/img/timeline/3.jpg
+#         alt: image alt text
+#         #align: #default is left       
+#       - title: "Title"
+#         year: "2009-2011"
+#         desc: "Your description here, **Markdown** is fully supported."
+#         image: assets/img/timeline/4.jpg
+#         alt: 
+#         align: right
+#     end: "Be Part <br> of Our <br> Story!"
+
+about:
+    title: "About Us"
+    text: "our story"
+    section: about
+
+# clients:
+#     section: clients
+#     list:
+#       - title: "envato"
+#         url: https://github.com/raviriley/agency-jekyll-theme
+#         logo: assets/img/clients/envato.jpg
+#       - title: "designmodo"
+#         url: https://github.com/raviriley/agency-jekyll-theme
+#         logo: assets/img/clients/designmodo.jpg
+#       - title: "themeforest"
+#         url: https://github.com/raviriley/agency-jekyll-theme
+#         logo: assets/img/clients/themeforest.jpg
+#       - title: "Creative Market"
+#         url: https://github.com/raviriley/agency-jekyll-theme
+#         logo: assets/img/clients/creative-market.jpg
+    
+team:
+    title:
+    text: "Unsere Hundeschule wächst und bietet nun noch mehr spannende Kurse und Trainingsmöglichkeiten für Sie und Ihren Vierbeiner. Egal ob Welpenkurs, Canicross oder Alltagstraining – bei uns finden Sie das passende Angebot. Lassen Sie sich von unseren erfahrenen Hundetrainern begleiten und erleben Sie, wie viel Spaß und Erfolg das Training mit Ihrem Hund machen kann. Besuchen Sie uns und entdecken Sie die neuen Möglichkeiten!"
+    # subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: team
+    people:
+      - name: "Caro"
+        image: assets/img/team/prof_pic/caro_completed.png
+        social:
+          - url: https://www.instagram.com/carohundeschule/
+            icon: fab fa-instagram
+          - url: https://www.facebook.com/caro.hundeschule/
+            icon: fab fa-facebook-f
+ #     - name: "Kerstin"
+ #       image: assets/img/team/prof_pic/small_kerstin_completed.png
+ #       kompleted: "Caro Kompleted"
+ #       social:
+ #         - url: https://www.instagram.com/carohundeschule/
+ #           icon: fab fa-instagram
+ #         - url: https://www.facebook.com/caro.hundeschule/
+ #           icon: fab fa-facebook-f
+ #       desc:
+
+      - name: "Conny"
+        image: assets/img/team/prof_pic/conny_completed.png
+        social:
+          - url: https://www.instagram.com/carohundeschule/
+            icon: fab fa-instagram
+          - url: https://www.facebook.com/carofuerhunde
+            icon: fab fa-facebook-f
+        desc: 
+      - name: "Sepp"  
+        image: assets/img/team/prof_pic/small_sepp_completed.png
+        social:
+          - url: https://www.instagram.com/villainpack_dogtraining/
+            icon: fab fa-instagram
+          - url: https://www.facebook.com/carofuerhunde
+            icon: fab fa-facebook-f
+        desc: ""
+          
+contact:
+    title: "Lass uns reden"
+    text: "Du möchtest uns kennenlernen oder deine erste Stunde buchen? Dann schreib uns einfach eine Nachricht oder ruf uns an (+49 160 96211220). Wir freuen uns auf dich"
+    section: contact
+    
+footer:
+    legal: "Datenschutz"
+    social:
+      - url: https://www.facebook.com/caro.hundeschule/
+        icon: "fab fa-facebook-f"
+      - url: https://www.instagram.com/carohundeschule/
+        icon: "fab fa-instagram"
+
+
+# {{ site.data.sitetext.ex.ex | markdownify | default: example }}
