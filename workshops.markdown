@@ -16,6 +16,10 @@ Bei Caro für Hunde möchten wir Hund und Mensch dabei unterstützen, gemeinsam 
 
 Ein intensiver Workshop, bei dem wir die Grundlagen der Kommunikation und des Miteinanders vertiefen. Ideal für alle, die noch tiefer in die Arbeit mit ihrem Hund eintauchen möchten.
 
+<iframe width="315" height="560"  src="https://youtube.com/embed/lhLGZ5akpsw"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+
 ---
 
 #### **Mondioring Workshop mit [Lisa Iffland](https://www.instagram.com/iffi_bande/) & [Tom Andrykowski](https://www.instagram.com/t.andrykowski/)**
@@ -23,6 +27,8 @@ Ein intensiver Workshop, bei dem wir die Grundlagen der Kommunikation und des Mi
 📍 **Ort:** Caro Hundeschule  
 
 Lerne von zwei erfahrenen Trainer:innen die spannende Sportart Mondioring kennen. Hier geht es um Präzision, Kontrolle und Spaß an der Arbeit. Für Anfänger und Fortgeschrittene geeignet.
+
+![Workshop Mondioring - 22.08. - 24.08.2025](assets/img/Mondioring-Workshop-22.08.-24.08.2025.jpeg)
 
 ---
 
@@ -32,6 +38,10 @@ Lerne von zwei erfahrenen Trainer:innen die spannende Sportart Mondioring kennen
 🤝 **In Kooperation mit:** [Hundeschule Dogroots](https://www.hundeschule-dogroots.de/)  
 
 Urlaub und Training in traumhafter Bergkulisse! Diese Woche ist perfekt, um gemeinsam an verschiedenen Themen zu arbeiten, Erholung zu finden und sich mit Gleichgesinnten auszutauschen.
+
+<iframe width="315" height="560" src="https://youtube.com/embed/upNSi-yCBCM"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
 
 ---
 
