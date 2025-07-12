@@ -1,12 +1,12 @@
 nav:
   - title: "Über uns"
     section: ueber-uns
+    sublinks:
+      - title: "Team"
+        section: team
 
   - title: "Services"
     section: services
-
-  - title: "Team"
-    section: team
 
   - title: "Kontakt"
     section: contact

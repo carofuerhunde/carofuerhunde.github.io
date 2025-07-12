@@ -17,10 +17,21 @@
 	  {% for service in site.data.sitetext.services.list %}
         <div class="col-md-4">
         <div>
-            <img src="{{ service.icon }}" alt="">
+            {% if service.url %}
+            <a href="{{ service.url }}"> <img src="{{ service.icon }}" alt="{{ service.title }}"></a>
+            {% else %}
+            <img src="{{ service.icon }}" alt="{{ service.title }}">
+            {% endif %}
         </div>
         <div>
+            <i class="{{ service.icon_class }} fa-2x mb-3 text-muted"></i>
+        </div>
+        <div>
+          {% if service.url %}
+            <a href="{{ service.url }}"> <h4 class="service-heading">{{ service.title | markdownify }}</h4></a>
+            {% else %}
             <h4 class="service-heading">{{ service.title | markdownify }}</h4>
+            {% endif %}
         </div>
         <div>
           {% if service.desc %}<div class="text-muted">{{ service.desc | markdownify }}</div>{% endif %} 
