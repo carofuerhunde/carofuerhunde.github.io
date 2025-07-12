@@ -22,7 +22,11 @@
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown{{ forloop.index }}">
                 {% for sublink in link.sublinks %}
-                  <a class="dropdown-item" href="{{ sublink.url }}">{{ sublink.title }}</a>
+                  {% if sublink.section %}
+                    <a class="dropdown-item" href="../#{{ sublink.section }}">{{ sublink.title }}</a>
+                  {% else %}
+                    <a class="dropdown-item" href="{{ sublink.url }}">{{ sublink.title }}</a>
+                  {% endif %}
                 {% endfor %}
               </div>
             </li>

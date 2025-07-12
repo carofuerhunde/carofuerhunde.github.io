@@ -24,6 +24,7 @@ services:
       - title: "Workshops"
         desc: "Ob auf unserem professionellen Trainingsgelände oder direkt bei Ihnen vor Ort – wir gestalten Workshops, die genau auf Ihre Bedürfnisse und die Ihres Hundes zugeschnitten sind. Von Grunderziehung und der Lösung von Verhaltensproblemen bis hin zu Hundesport-Training für aktive Vierbeiner: Gemeinsam fördern wir das Potenzial Ihres Hundes und sorgen für Spaß und Erfolg."
         icon: assets/img/services/Freche.jpeg
+        url: /workshops.html
 
 ueber-uns:
     title: "Über uns"
