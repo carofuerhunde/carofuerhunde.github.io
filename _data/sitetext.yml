@@ -12,19 +12,27 @@ services:
       - title: "persönliches Coaching"
         desc: "Individuelles Training für Ihren Hund! Mit maßgeschneiderten Übungen und persönlicher Betreuung helfen wir Ihnen, spezifische Verhaltensprobleme zu lösen und die Bindung zu Ihrem Hund zu stärken. Flexibel, effektiv und auf Ihre Bedürfnisse abgestimmt."
         icon: assets/img/services/Pisser.jpeg
+        url: /service-persoenliches-coaching.html
       - title: "Hundepension"
         desc: "Ihr Hund verdient auch im Urlaub das Beste! Mit viel Auslauf, Spiel und individueller Betreuung sorgen wir dafür, dass sich Ihr Hund rundum wohlfühlt."
-        icon: assets/img/services/Tussi.jpeg       
+        icon: assets/img/services/Tussi.jpeg
+        url: /service-hundepension.html       
       - title: "Alltagstraining"
         desc: "Gemeinsam meistern wir den Alltag! Mit gezieltem Training wird Ihr Hund zum entspannten Begleiter in jeder Situation. Spaß und Erfolg garantiert!"
         icon: assets/img/services/Stinker.jpeg
+        url: /service-alltagstraining.html
       - title: "Hundesport"
         desc: "Entdecken Sie die Vielfalt! Ob Mondioring, IGP, Begleithund oder Fit mit Hund – bei uns findet jeder das passende Training. Spaß und Erfolg garantiert!"
         icon: assets/img/services/Schlitzohr.jpeg
+        url: /service-hundesport.html
       - title: "Workshops"
-        desc: "Ob auf unserem professionellen Trainingsgelände oder direkt bei Ihnen vor Ort – wir gestalten Workshops, die genau auf Ihre Bedürfnisse und die Ihres Hundes zugeschnitten sind. Von Grunderziehung und der Lösung von Verhaltensproblemen bis hin zu Hundesport-Training für aktive Vierbeiner: Gemeinsam fördern wir das Potenzial Ihres Hundes und sorgen für Spaß und Erfolg."
+        desc: "Ob auf unserem Trainingsgelände oder bei Ihnen vor Ort – unsere Workshops sind individuell auf Sie und Ihren Hund abgestimmt. Von Grunderziehung bis Hundesport fördern wir Potenzial, lösen Probleme und schaffen echte Erfolgserlebnisse."
         icon: assets/img/services/Freche.jpeg
-        url: /workshops.html
+        url: /service-workshop.html
+      - title: "PTBS Assistenzhunde"
+        desc: "PTBS-Assistenzhunde individuell ausbilden! Mit einem einfühlsamen, strukturierten Konzept fördern wir gezielt die Bindung und Aufgabenbewältigung. Für Menschen mit PTBS – professionell begleitet, bedürfnisorientiert und alltagstauglich."
+        icon: assets/img/services/Depperte.jpeg
+        url: /service-assistenzhunde.html
 
 ueber-uns:
     title: "Über uns"
