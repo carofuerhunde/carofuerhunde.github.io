@@ -56,7 +56,7 @@ Sie haben das Recht, jederzeit Auskunft über die von uns gespeicherten personen
 - **Datenübertragbarkeit**  
 - **Widerspruch gegen die Verarbeitung**  
 
-Bitte kontaktieren Sie uns unter: [Deine E-Mail-Adresse].
+Bitte kontaktieren Sie uns unter: [kontakt@caro-fuer-hunde.de](mailto:kontakt@caro-fuer-hunde.de)  .
 
 ---
 
@@ -80,5 +80,6 @@ Weitere Informationen zur Datenverarbeitung durch Instagram finden Sie in der Da
 Diese Datenschutzerklärung kann jederzeit aktualisiert werden, um den rechtlichen Anforderungen zu entsprechen oder Änderungen an unserer Webseite zu berücksichtigen. Die aktuelle Version finden Sie immer auf dieser Seite.  
 
 ---
+
 
 **Letzte Aktualisierung:** 29.12.2024
