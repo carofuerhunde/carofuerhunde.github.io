@@ -175,6 +175,7 @@ contact:
     
 footer:
     legal: "Datenschutz"
+    imprint: "Impressum"
     social:
       - url: https://www.facebook.com/caro.hundeschule/
         icon: "fab fa-facebook-f"
