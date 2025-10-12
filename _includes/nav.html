@@ -1,13 +1,21 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav" style="background-color:#FF8800">
-  <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="../#" style="color:#ffffff">
-      {%- if site.logo -%}
-        <img height="{{ site.logo.height | default: 52 }}" src="{{ site.logo.path }}"/>
-      {%- else -%}
-        {{ site.title }}
-      {%- endif -%}
-    </a>
+  <div class="container align-items-center">
+    
+    <!-- Brand: Logo + Link darunter -->
+    <div class="navbar-brand d-flex flex-column align-items-center m-0 p-0">
+      <a class="js-scroll-trigger" href="../#" aria-label="{{ site.title }}" style="color:#ffffff;">
+        {%- if site.logo -%}
+          <img height="{{ site.logo.height | default: 52 }}" src="{{ site.logo.path }}" alt="{{ site.title }}" style="display:block;">
+        {%- else -%}
+          {{ site.title }}
+        {%- endif -%}
+      </a>
+      <a class="js-scroll-trigger" href="https://www.carotelzumbuntenhund.de/" target="_blank" rel="noopener" style="color:#ffffff; text-decoration:none; font-size:0.9rem; margin-top:4px;">
+        Carotel – Zum bunten Hund
+      </a>
+    </div>
+
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       Menu
       <i class="fas fa-bars"></i>
