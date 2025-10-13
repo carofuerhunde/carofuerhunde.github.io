@@ -7,9 +7,10 @@ title: Workshops
 
 Bei Caro für Hunde möchten wir Hund und Mensch dabei unterstützen, gemeinsam zu wachsen und neue Erfahrungen zu sammeln. Unsere Workshops bieten dir die Möglichkeit, intensiv an speziellen Themen zu arbeiten, neue Trainingsansätze kennenzulernen und dich mit anderen Hundebegeisterten auszutauschen. Egal ob du mit deinem Hund neue Sportarten ausprobieren oder eure Bindung vertiefen möchtest — hier findest du das passende Angebot!
 
-### Anstehende Workshops
+### Anstehende Workshops  
+
 #### **Anti-Giftköder**
-📅 **Datum:** 19.11.2025 10:00 - 12:30 Uhr
+📅 **Datum:** 19.11.2025 10:00 - 12:30 Uhr  
 📍 **Ort:** Caro Hundeschule  
 🤝 **Termin buchen:** [Caro für Hunde](https://www.eTermin.net/caro-fuer-hunde/serviceid/616871)   
 
@@ -18,15 +19,18 @@ In diesem Training lernt dein Hund, gefundene Nahrungsmittel oder unbekannte Geg
 ---
 
 #### **Erste Hilfe beim Hund**
-📅 **Datum:** 19.11.2025 15:00 - 17:00 Uhr
+📅 **Datum:** 19.11.2025 15:00 - 17:00 Uhr  
 📍 **Ort:** Caro Hundeschule  
 🤝 **Termin buchen:** [Caro für Hunde](https://www.eTermin.net/caro-fuer-hunde/serviceid/616872)   
 
 In diesem Kurs lernst du, wie du im Notfall richtig reagierst – von der Wundversorgung über Hitzeschlag bis zur Wiederbelebung. So kannst du deinem Hund im Ernstfall schnell und sicher helfen.
 
 
-### Vergangene Workshops
+---
 
+
+### Vergangene Workshops  
+  
 #### **Trainingsferien Tirol**
 📅 **Datum:** 22.09. bis 27.09.  
 📍 **Ort:** Tirol  
