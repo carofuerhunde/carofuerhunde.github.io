@@ -15,7 +15,7 @@ _Gültig ab 01.01.2026_ - alle Preise inkl. Mehrwersteuer
 - **Trainerweiterbildung**
     - Tag 440€
     - Woche 1500€ (Dienstag bis Donnerstag und Samstag) - Zeiten nach Absprache
-
+ 
 - **Erste Hilfe am Hund** oder **Antigiftköderworkshop ohne Hund** (je Teilnehmer): **42 €**
 
 - **Erste Hilfe am Hund** oder **Antigiftköderworkshop mit Hund** (je Teilnehmer): **62 €**
@@ -104,6 +104,7 @@ Nur mit verbindlicher Terminvereinbarung. Zusätzliche Gebühr: **30,00 €**.
 
 
 **Sonderleistungen** (z. B. Medikamentengabe) werden nach Aufwand berechnet.
+
 
 
 
