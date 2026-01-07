@@ -5,22 +5,20 @@ title: Preisübersicht
 
 ## Ausbildungskosten
 
-_Gültig ab 01.01.2025_ - alle Preise inkl. Mehrwersteuer
+_Gültig ab 01.01.2026_ - alle Preise inkl. Mehrwersteuer
 
-- **Privatstunde** (à 60 Minuten, abgerechnet 4/4): **76 €**  
+- **Privatstunde** (à 60 Minuten, abgerechnet 4/4): **84 €**  
   *(Privatunterricht ggf. zzgl. Fahrtkosten und Auslagen)*
 
-- **Unterrichtseinheit Assistenzhund** (à 60 Minuten): **125 €**
+- **Unterrichtseinheit Assistenzhund** (à 60 Minuten): **160 €**
 
-- **Trainerweiterbildung** Tag pro 360€ pro Woche 1200€ (Dienstag bis Donnerstag und Samstag) - Zeiten nach Absprache
+- **Trainerweiterbildung** pro Tag 440€ pro Woche 1500€ (Dienstag bis Donnerstag und Samstag) - Zeiten nach Absprache
 
 - **Erste Hilfe am Hund** oder **Antigiftköderworkshop ohne Hund** (je Teilnehmer): **42 €**
 
 - **Erste Hilfe am Hund** oder **Antigiftköderworkshop mit Hund** (je Teilnehmer): **62 €**
 
 - **Theoriekurs (Abendveranstaltung)** ohne Hund (je Teilnehmer): **36 €**
-
-- **10er Block Privatunterricht**: Statt **760,00 €** nur **700 €**
 
 ---
 
@@ -35,8 +33,7 @@ _Gültig ab 01.01.2025_ - alle Preise inkl. Mehrwersteuer
 ## Gruppen- und Stadttraining
 
 - **Pro Teilnahme**: **28 €**
-- **Bonuskarten-System**: 11 Teilnahmen (nur bei Vorauszahlung/Rechnung) **280 €**
-
+- 
 > **Hinweis:**  
 > Alle Gruppen- und Stadttrainings sind nur nach qualifizierendem Einzelunterricht möglich.  
 > 10er Karten sind **4 Monate** nach der ersten Teilnahme gültig.  
@@ -47,17 +44,6 @@ _Gültig ab 01.01.2025_ - alle Preise inkl. Mehrwersteuer
 ## Fahrten über 30 km (einfache Strecke)
 
 - **Privatunterricht** (ggf. zzgl. Fahrtkosten und Auslagen): **0,85 €/km** *(schnellste Route)*
-
----
-
-## Angebot: SUPER-FLAT-RATE
-
-- **Für alle Einzel- und Gruppentermine**:  
-  Soviel Einzelunterricht und Gruppenteilnahmen, wie benötigt werden, solange es ausbildungstechnisch Sinn macht und Lernfortschritte erkennbar sind.
-
-- Abhängig von der Verfügbarkeit der Termine und nur bei Vorauszahlung/Rechnung.
-
-- **3 Monate ab Buchung**: **1.200 €**
 
 ---
 
@@ -113,5 +99,6 @@ Mit der Abgabe des Hundes (der Hunde) erkennt der Kunde die AGBs und Betriebsbed
 
 **Bringen und Abholen außerhalb der Öffnungszeiten** (inkl. Sonn- und Feiertage):  
 Nur mit verbindlicher Terminvereinbarung. Zusätzliche Gebühr: **30,00 €**.
+
 
 **Sonderleistungen** (z. B. Medikamentengabe) werden nach Aufwand berechnet.
