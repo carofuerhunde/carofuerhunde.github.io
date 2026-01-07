@@ -35,11 +35,6 @@ _Gültig ab 01.01.2026_ - alle Preise inkl. Mehrwersteuer
 ## Gruppen- und Stadttraining
 
 - **Pro Teilnahme**: **28 €**
-- 
-> **Hinweis:**  
-> Alle Gruppen- und Stadttrainings sind nur nach qualifizierendem Einzelunterricht möglich.  
-> 10er Karten sind **4 Monate** nach der ersten Teilnahme gültig.  
-> Bestehende 10er Karten und Flatrates vor dem 14. September 2024 bleiben unberührt und gelten weiterhin.
 
 ---
 
@@ -104,6 +99,7 @@ Nur mit verbindlicher Terminvereinbarung. Zusätzliche Gebühr: **30,00 €**.
 
 
 **Sonderleistungen** (z. B. Medikamentengabe) werden nach Aufwand berechnet.
+
 
 
 
