@@ -12,7 +12,9 @@ _Gültig ab 01.01.2026_ - alle Preise inkl. Mehrwersteuer
 
 - **Unterrichtseinheit Assistenzhund** (à 60 Minuten): **160 €**
 
-- **Trainerweiterbildung** pro Tag 440€ pro Woche 1500€ (Dienstag bis Donnerstag und Samstag) - Zeiten nach Absprache
+- **Trainerweiterbildung**
+-- Tag 440€
+-- Woche 1500€ (Dienstag bis Donnerstag und Samstag) - Zeiten nach Absprache
 
 - **Erste Hilfe am Hund** oder **Antigiftköderworkshop ohne Hund** (je Teilnehmer): **42 €**
 
@@ -102,3 +104,4 @@ Nur mit verbindlicher Terminvereinbarung. Zusätzliche Gebühr: **30,00 €**.
 
 
 **Sonderleistungen** (z. B. Medikamentengabe) werden nach Aufwand berechnet.
+
