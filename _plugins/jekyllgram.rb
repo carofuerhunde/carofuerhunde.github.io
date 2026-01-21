@@ -39,7 +39,7 @@ module Jekyll
     def initialize(tag, params, token)
       @limit = params.to_i
       @access_token = ENV['JEKYLLGRAM_TOKEN']
-      @api_url = 'https://api.instagram.com/v21.0'
+      @api_url = 'https://api.facebook.com/v21.0'
 
       super
     end
