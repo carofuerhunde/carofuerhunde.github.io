@@ -1,0 +1,7 @@
+{
+  "name": "decap-oauth",
+  "private": true,
+  "dependencies": {
+    "netlify-cms-oauth-provider-node": "^1.2.0"
+  }
+}
