@@ -1,22 +1,48 @@
 backend:
-  name: github
-  repo: carofuerhunde/carofuerhunde.github.io
+  name: git-gateway
   branch: main
-  auth_scope: repo
-  client_id: Ov23lispa6wq6duWdSU1
   
-media_folder: "_site/assets/img" # Media files will be stored in the repo under images/uploads
+media_folder: "assets/img" # Media files will be stored in the repo under assets/img
+public_folder: "/assets/img" # The src attribute for uploaded media
+
+# Site configuration
+site_url: https://caro-fuer-hunde.de
+display_url: https://caro-fuer-hunde.de
+logo_url: https://caro-fuer-hunde.de/assets/img/team/prof_pic/caro_completed.png
 
 collections:
-  - name: "page" # Used in routes, e.g., /admin/collections/blog
-    label: "page" # Used in the UI
-    folder: "/" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
-      - { label: "Body", name: "body", widget: "markdown" }
+  # Workshops Collection
+  - name: "workshops"
+    label: "Workshops"
+    files:
+      - label: "Workshop Seite"
+        name: "workshop-page"
+        file: "termine-workshops.markdown"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Titel der Seite", name: "title", widget: "string", default: "Workshops" }
+          - { label: "Einleitung", name: "intro", widget: "markdown", hint: "Beschreibung am Anfang der Workshop-Seite" }
+          - label: "Aktuelle Workshops"
+            name: "current_workshops"
+            widget: "list"
+            fields:
+              - { label: "Workshop Name", name: "name", widget: "string" }
+              - { label: "Datum", name: "date", widget: "string", hint: "z.B. 19.11.2025 15:00 - 17:00 Uhr" }
+              - { label: "Ort", name: "location", widget: "string", default: "Caro Hundeschule" }
+              - { label: "Buchungslink", name: "booking_link", widget: "string", required: false }
+              - { label: "Gasttrainer", name: "guest_trainer", widget: "string", required: false }
+              - { label: "Anmeldeformular", name: "registration_form", widget: "boolean", default: false, hint: "PDF Anmeldeformular verwenden?" }
+              - { label: "Beschreibung", name: "description", widget: "markdown" }
+              - { label: "Bild", name: "image", widget: "image", required: false }
+          - label: "Vergangene Workshops"
+            name: "past_workshops"
+            widget: "list"
+            fields:
+              - { label: "Workshop Name", name: "name", widget: "string" }
+              - { label: "Datum", name: "date", widget: "string" }
+              - { label: "Ort", name: "location", widget: "string" }
+              - { label: "Kooperation", name: "cooperation", widget: "string", required: false }
+              - { label: "Beschreibung", name: "description", widget: "markdown" }
+              - { label: "Bild", name: "image", widget: "image", required: false }
+              - { label: "Video (YouTube)", name: "video_url", widget: "string", required: false, hint: "YouTube Video ID (z.B. upNSi-yCBCM)" }
+          - { label: "Abschlusstext", name: "outro", widget: "markdown", hint: "Text am Ende der Seite" }
