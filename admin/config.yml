@@ -2,6 +2,8 @@ backend:
   name: github
   repo: carofuerhunde/carofuerhunde.github.io
   branch: main
+  base_url: https://legendary-blini-cbb531.netlify.app
+  auth_endpoint: /.netlify/functions/auth
   
 media_folder: "_site/assets/img" # Media files will be stored in the repo under images/uploads
 
