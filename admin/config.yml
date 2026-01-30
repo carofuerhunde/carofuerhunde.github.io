@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main
   
 media_folder: "_site/assets/img" # Media files will be stored in the repo under images/uploads
