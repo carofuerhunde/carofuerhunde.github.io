@@ -1,0 +1,165 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ page.title }}</h2>
+        </div>
+    </div>
+
+    <!-- Introduction -->
+    {% if page.intro %}
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="intro-text">
+                {{ page.intro | markdownify }}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Current Workshops -->
+    {% if page.current_workshops and page.current_workshops.size > 0 %}
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Anstehende Workshops</h3>
+            {% for workshop in page.current_workshops %}
+            <div class="workshop-item current-workshop">
+                <h4><strong>{{ workshop.name }}</strong></h4>
+                <p>📅 <strong>Datum:</strong> {{ workshop.date }}</p>
+                <p>📍 <strong>Ort:</strong> {{ workshop.location }}</p>
+                {% if workshop.guest_trainer %}
+                <p>👋 <strong>Gast:</strong> {{ workshop.guest_trainer }}</p>
+                {% endif %}
+                
+                {% if workshop.booking_link %}
+                <p>🤝 <strong>Termin buchen:</strong> <a href="{{ workshop.booking_link }}" target="_blank">Caro für Hunde</a></p>
+                {% elsif workshop.registration_form %}
+                <p>🤝 <strong>Termin buchen:</strong> <a href="/assets/downloads/AnmeldungWorkshopsSeminare.pdf" target="_blank">Anmeldeformular (PDF)</a> an info@caro.fuer-hunde.de</p>
+                {% endif %}
+
+                <div class="workshop-description">
+                    {{ workshop.description | markdownify }}
+                </div>
+
+                {% if workshop.image %}
+                <div class="workshop-image">
+                    <img src="{{ workshop.image | relative_url }}" alt="{{ workshop.name }}" class="img-fluid">
+                </div>
+                {% endif %}
+                <hr>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Past Workshops -->
+    {% if page.past_workshops and page.past_workshops.size > 0 %}
+    <div class="row">
+        <div class="col-lg-12">
+            <h3>Vergangene Workshops</h3>
+            {% for workshop in page.past_workshops %}
+            <div class="workshop-item past-workshop">
+                <h4><strong>{{ workshop.name }}</strong></h4>
+                <p>📅 <strong>Datum:</strong> {{ workshop.date }}</p>
+                <p>📍 <strong>Ort:</strong> {{ workshop.location }}</p>
+                {% if workshop.cooperation %}
+                <p>🤝 <strong>In Kooperation mit:</strong> {{ workshop.cooperation }}</p>
+                {% endif %}
+
+                <div class="workshop-description">
+                    {{ workshop.description | markdownify }}
+                </div>
+
+                {% if workshop.video_url %}
+                <div class="workshop-video">
+                    <iframe width="315" height="560" src="https://youtube.com/embed/{{ workshop.video_url }}"
+                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+                {% endif %}
+
+                {% if workshop.image %}
+                <div class="workshop-image">
+                    <img src="{{ workshop.image | relative_url }}" alt="{{ workshop.name }}" class="img-fluid">
+                </div>
+                {% endif %}
+                <hr>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Outro -->
+    {% if page.outro %}
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="outro-text">
+                {{ page.outro | markdownify }}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</div>
+
+<style>
+.workshop-item {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.current-workshop {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+}
+
+.past-workshop {
+    background-color: #ffffff;
+    border-left: 4px solid #6c757d;
+}
+
+.workshop-description {
+    margin: 1rem 0;
+}
+
+.workshop-image {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.workshop-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.workshop-video {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.intro-text, .outro-text {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #e9ecef;
+    border-radius: 8px;
+}
+
+h3 {
+    color: #495057;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 0.5rem;
+    margin: 2rem 0 1rem 0;
+}
+
+h4 {
+    color: #343a40;
+    margin-bottom: 1rem;
+}
+</style>
