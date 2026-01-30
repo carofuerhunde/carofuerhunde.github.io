@@ -1,5 +1,6 @@
 backend:
   name: github
+  repo: carofuerhunde/carofuerhunde.github.io
   branch: main
   
 media_folder: "_site/assets/img" # Media files will be stored in the repo under images/uploads
