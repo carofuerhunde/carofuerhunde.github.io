@@ -35,7 +35,7 @@ services:
         url: /service-assistenzhunde.html
 
 ueber-uns:
-    title: "Über uns"
+    title: "Über uns - Wir sind Caro"
     text: "Wir können viel schreiben, aber besser du entdeckst uns selbst"
     section: ueber-uns
     podcast:
