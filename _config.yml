@@ -31,8 +31,6 @@ url: "https://caro-fuer-hunde.de" # the base hostname & protocol for your site, 
 
 # Build settings
 # theme: jekyll-agency
-plugins:
-  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
