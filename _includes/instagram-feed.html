@@ -1,0 +1,23 @@
+{% assign posts = site.data.instagram.data | slice: 0, 4 %}
+
+{% if posts and posts.size > 0 %}
+<div class="row instagram-feed">
+  {% for post in posts %}
+    <div class="col-md-3 col-sm-6 mb-4">
+      <a href="{{ post.permalink }}" target="_blank" rel="noopener noreferrer">
+        {% if post.media_type == "VIDEO" and post.thumbnail_url %}
+          <img
+            src="{{ post.thumbnail_url }}"
+            alt="{{ post.caption | default: 'Instagram Post' | escape }}"
+            class="img-fluid">
+        {% else %}
+          <img
+            src="{{ post.media_url }}"
+            alt="{{ post.caption | default: 'Instagram Post' | escape }}"
+            class="img-fluid">
+        {% endif %}
+      </a>
+    </div>
+  {% endfor %}
+</div>
+{% endif %}
