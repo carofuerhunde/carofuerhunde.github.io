@@ -158,15 +158,16 @@ team:
             icon: fab fa-instagram
           - url: https://www.facebook.com/carofuerhunde
             icon: fab fa-facebook-f
-        desc: 
-      - name: "Sepp"  
-        image: assets/img/team/prof_pic/small_sepp_completed.png
-        social:
-          - url: https://www.instagram.com/villainpack_dogtraining/
-            icon: fab fa-instagram
-          - url: https://www.facebook.com/carofuerhunde
-            icon: fab fa-facebook-f
         desc: ""
+        
+#      - name: "Sepp"  
+#        image: assets/img/team/prof_pic/small_sepp_completed.png
+#        social:
+#          - url: https://www.instagram.com/villainpack_dogtraining/
+#            icon: fab fa-instagram
+#          - url: https://www.facebook.com/carofuerhunde
+#            icon: fab fa-facebook-f
+#        desc: ""
           
 contact:
     title: "Lass uns reden"
