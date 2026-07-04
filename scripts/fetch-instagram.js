@@ -77,20 +77,24 @@ function downloadImage(url, destPath) {
 }
 
 async function findIgBusinessAccountId() {
-  // Get all Facebook Pages the token has access to
+  // Try Page Access Token first: "me" is the Page itself
+  const pageRes = await fetchJSON(
+    `https://graph.facebook.com/v21.0/me?fields=instagram_business_account,name&access_token=${TOKEN}`
+  );
+  if (!pageRes.error && pageRes.instagram_business_account) {
+    console.log(`Instagram Business Account: ${pageRes.instagram_business_account.id} (Page: "${pageRes.name}")`);
+    return { igUserId: pageRes.instagram_business_account.id, pageToken: TOKEN };
+  }
+
+  // Fall back to User Access Token: fetch all managed Pages
   const pagesRes = await fetchJSON(
     `https://graph.facebook.com/v21.0/me/accounts?access_token=${TOKEN}`
   );
   if (pagesRes.error) {
-    throw new Error("Could not get Pages: " + pagesRes.error.message);
+    throw new Error("Could not find Instagram account. Error: " + pagesRes.error.message);
   }
 
-  const pages = pagesRes.data || [];
-  if (pages.length === 0) {
-    throw new Error("No Facebook Pages found for this token. Make sure the token has pages_show_list permission.");
-  }
-
-  for (const page of pages) {
+  for (const page of (pagesRes.data || [])) {
     const pageToken = page.access_token || TOKEN;
     const igRes = await fetchJSON(
       `https://graph.facebook.com/v21.0/${page.id}?fields=instagram_business_account&access_token=${pageToken}`
@@ -102,8 +106,7 @@ async function findIgBusinessAccountId() {
   }
 
   throw new Error(
-    "No Instagram Business Account found connected to any Facebook Page. " +
-    "Make sure the Instagram account is linked to the Facebook Page."
+    "No Instagram Business Account found. Make sure the Instagram account is linked to the Facebook Page."
   );
 }
 
