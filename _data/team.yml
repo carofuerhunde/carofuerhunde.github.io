@@ -1,0 +1,20 @@
+- name: Caro
+  role: Hundetrainerin & Inhaberin
+  bio: ""
+  image: /assets/images/team-caro.jpg
+  instagram: "https://www.instagram.com/carohundeschule/"
+  facebook: "https://www.facebook.com/caro.hundeschule/"
+
+- name: Conny
+  role: Hundetrainerin
+  bio: ""
+  image: /assets/images/team-conny.jpg
+  instagram: "https://www.instagram.com/carohundeschule/"
+  facebook: "https://www.facebook.com/carofuerhunde"
+
+- name: Sepp
+  role: Hundetrainer
+  bio: ""
+  image: /assets/images/team-sepp.jpg
+  instagram: "https://www.instagram.com/villainpack_dogtraining/"
+  facebook: "https://www.facebook.com/carofuerhunde"

@@ -1,36 +1,52 @@
-  <!-- Footer -->
-  <footer class="footer" style="background-color:#FF8800">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-4">
-          <span class="copyright">Copyright &copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
-        </div>
-		<!-- Social Media -->
-        <div class="col-md-4">
-          <ul class="list-inline social-buttons">
-		  {% for link in site.data.sitetext.footer.social  %}
-            <li class="list-inline-item">
-			  {% if link.url %}
-              <a href="{{ link.url }}">
-                {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
-              </a>
-			  {% endif %}
-            </li>
-			{% endfor %}
-          </ul>
-        </div>
-		<!-- Legal -->
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="legal">{{ site.data.sitetext.footer.legal | default: Privacy Policy }}</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="imprint">{{ site.data.sitetext.footer.imprint | default: Imprint }}</a>
-            </li>
-          </ul>
-        </div>
+<footer class="bg-gray-950 text-gray-400">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+
+      <div>
+        <p class="font-script text-2xl text-gold mb-4">
+          Caro für Hunde
+        </p>
+        <p class="text-sm leading-relaxed mb-5">
+          Professionelle Hundeschule mit Herz.<br>
+          BHV Mitglied · §11 TierSchG lizenziert
+        </p>
+        <a href="tel:{{ site.phone | remove: ' ' }}" class="text-gold hover:text-gold-dark transition-colors text-sm font-medium">
+          {{ site.phone }}
+        </a>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Leistungen</h3>
+        <ul class="space-y-2 text-sm">
+          {% for service in site.data.services %}
+          <li>
+            <a href="{{ '/leistungen/' | relative_url }}#{{ service.slug }}"
+               class="hover:text-gold transition-colors">{{ service.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Navigation</h3>
+        <ul class="space-y-2 text-sm">
+          {% for item in site.data.navigation %}
+          <li>
+            <a href="{{ item.url | relative_url }}" class="hover:text-gold transition-colors">{{ item.name }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+      <p>© {{ site.time | date: "%Y" }} Caro für Hunde. Alle Rechte vorbehalten.</p>
+      <div class="flex gap-6">
+        <a href="{{ '/impressum/' | relative_url }}" class="hover:text-gold transition-colors">Impressum</a>
+        <a href="{{ '/datenschutz/' | relative_url }}" class="hover:text-gold transition-colors">Datenschutz</a>
       </div>
     </div>
-  </footer>
-  <!-- End Footer -->
+
+  </div>
+</footer>

@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ site.lang | default: 'de' }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} – {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script>
+  {% seo %}
+</head>
+<body class="bg-white text-gray-900 antialiased">
+  {% include header.html %}
+  <main>{{ content }}</main>
+  {% include footer.html %}
 
-  {% include head.html %}
-
-  <body id="page-top">
-
-      {{ content }}
-
-	  {% include footer.html %}
-
-	  <!-- Bootstrap core JavaScript -->
-	  <script src="/assets/js/jquery.min.js"></script>
-	  <script src="/assets/js/bootstrap.bundle.min.js"></script>
-
-	  <!-- Plugin JavaScript -->
-	  <script src="/assets/js/jquery.easing.min.js"></script>
-
-	  <!-- Contact form JavaScript -->
-	  <script src="/assets/js/jqBootstrapValidation.js"></script>
-	  <script src="/assets/js/contact_me.js"></script>
-
-	  <!-- Custom scripts for this template -->
-	  <script src="/assets/js/agency.min.js"></script>
-
-  </body>
+  <!-- eTermin booking widget -->
+  <button id="etwidgetBtn" class="etwidgetBtn rightPosBtn" type="button"></button>
+  <div id="etwidgetModal" class="etwidget">
+    <div class="etcontent">
+      <span id="etWidgetClose" class="etclose">&times;</span>
+      <iframe id="etifr" src="https://www.eTermin.net/caro-fuer-hunde" height="1600px" width="100%" scrolling="no" frameborder="0"></iframe>
+      <script id="etwidget" src="https://www.etermin.net/js/etwidget.min.js"
+        data-text="Termin%20buchen"
+        data-color="#FF8800"
+        data-colortext=""
+        data-pos="right"
+        data-size="n"></script>
+    </div>
+  </div>
+</body>
 </html>

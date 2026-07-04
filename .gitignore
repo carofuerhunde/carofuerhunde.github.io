@@ -1,6 +1,9 @@
-_site
-.sass-cache
-.jekyll-cache
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-vendor
-Gemfile.lock
+.bundle/
+vendor/
+node_modules/
+assets/css/main.css
+.claude/

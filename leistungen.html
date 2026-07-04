@@ -1,0 +1,44 @@
+---
+layout: default
+title: Leistungen
+description: "Unser volles Angebot: Personal Coaching, Hundebetreuung, Alltagstraining, Hundesport, Workshops und Assistenzhund-Ausbildung."
+permalink: /leistungen/
+---
+
+<div class="bg-gray-50 border-b border-gray-200">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <h1 class="text-5xl font-bold text-primary mb-4 uppercase tracking-wide">Leistungen</h1>
+    <p class="text-xl text-gray-600 italic max-w-2xl">Unser Angebot für jeden Hund, jedes Ziel und jede Lebenssituation.</p>
+  </div>
+</div>
+
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  {% for service in site.data.services %}
+  <article id="{{ service.slug }}" class="scroll-mt-24 mb-10 last:mb-0 bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
+    <div class="p-8 lg:p-12">
+      <div class="flex flex-col lg:flex-row lg:items-start gap-8">
+        <div class="w-32 h-32 flex-shrink-0 rounded-2xl overflow-hidden">
+          <img src="{{ service.image | relative_url }}" alt="{{ service.title }}" class="w-full h-full object-cover">
+        </div>
+        <div class="flex-1">
+          <h2 class="text-3xl font-bold text-primary mb-4 uppercase tracking-wide">{{ service.title }}</h2>
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">{{ service.short }}</p>
+          {% if service.details != "" %}
+          <div class="text-gray-700 leading-relaxed space-y-3">
+            {{ service.details | markdownify }}
+          </div>
+          {% else %}
+          <p class="text-gray-400 italic text-sm">Detaillierte Informationen folgen in Kürze.</p>
+          {% endif %}
+          <div class="mt-8">
+            <a href="{{ site.booking_url }}" target="_blank" rel="noopener"
+               class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-semibold px-6 py-3 rounded-xl transition-colors">
+              Termin buchen
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  {% endfor %}
+</div>

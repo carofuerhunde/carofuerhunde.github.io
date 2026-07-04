@@ -1,0 +1,16 @@
+{
+  "name": "caro-fuer-hunde-v2",
+  "private": true,
+  "scripts": {
+    "css:watch": "tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --watch",
+    "css:build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --minify",
+    "dev": "concurrently \"npm run css:watch\" \"bundle exec jekyll serve --livereload\"",
+    "fetch-instagram": "node scripts/fetch-instagram.js",
+    "build": "npm run fetch-instagram && npm run css:build && JEKYLL_ENV=production bundle exec jekyll build"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "concurrently": "^9.0.0"
+  }
+}

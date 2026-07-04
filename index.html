@@ -1,0 +1,291 @@
+---
+layout: default
+title: "Professionelle Hundeschule"
+description: "Caro für Hunde – Professionelles Hundetraining mit Herz. Personal Coaching, Boarding, Alltagstraining, Hundesport und mehr."
+---
+
+<!-- Hero -->
+<section class="relative text-white overflow-hidden" style="background-image: url('{{ '/assets/images/hero.jpg' | relative_url }}'); background-size: cover; background-position: 30% 30%; background-repeat: no-repeat;">
+  <div class="absolute inset-0 bg-gray-950/70"></div>
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-40 lg:py-64 text-center">
+    <p class="text-gold font-bold uppercase tracking-widest text-sm mb-6">Willkommen bei</p>
+    <h1 class="font-script text-5xl lg:text-7xl leading-tight mb-6 text-white drop-shadow-lg">
+      Caro für Hunde
+    </h1>
+    <p class="text-xl lg:text-2xl text-gray-200 mb-10 leading-relaxed max-w-2xl mx-auto font-medium">
+      Professionelles Hundetraining mit Herz – von der Welpenstunde bis zum Spezialisten.
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="{{ '/leistungen/' | relative_url }}"
+         class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-8 py-4 rounded-xl transition-colors text-lg uppercase tracking-wide">
+        Leistungen entdecken
+      </a>
+      <a href="{{ site.booking_url }}" target="_blank" rel="noopener"
+         class="inline-flex items-center gap-2 bg-gold hover:bg-gold-dark text-gray-900 font-bold px-8 py-4 rounded-xl transition-colors text-lg uppercase tracking-wide">
+        Termin buchen
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Über uns -->
+<section class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center mb-16">
+      <p class="text-gold font-bold uppercase tracking-widest text-sm mb-3">Wer wir sind</p>
+      <h2 class="text-4xl font-bold text-primary uppercase tracking-wide mb-4">Über uns</h2>
+      <p class="text-xl text-gray-500 italic">Wir können viel schreiben, aber besser du entdeckst uns selbst</p>
+    </div>
+
+    <!-- Row 1: Instagram Posts -->
+    <div class="mb-16">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="font-bold text-gray-900 uppercase tracking-wide">Aktuelles auf Instagram</p>
+            <p class="text-sm text-gray-500">@carohundeschule</p>
+          </div>
+        </div>
+        <a href="https://www.instagram.com/carohundeschule/" target="_blank" rel="noopener"
+           class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white font-bold px-6 py-3 rounded-xl transition-colors text-sm uppercase tracking-wide">
+          Alle Posts ansehen
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        {% for post in site.data.instagram %}
+        <a href="{{ post.permalink }}" target="_blank" rel="noopener"
+           class="group relative aspect-square rounded-2xl overflow-hidden bg-gray-200 block shadow-sm">
+          {% if post.image != "" %}
+          <img src="{{ post.image }}" alt="Instagram Post"
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          {% else %}
+          <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400">
+            <svg class="w-10 h-10 text-white opacity-60" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+          </div>
+          {% endif %}
+          <!-- Hover overlay -->
+          <div class="absolute inset-0 bg-gray-950/0 group-hover:bg-gray-950/50 transition-colors duration-300 flex flex-col items-center justify-center gap-2">
+            {% if post.is_video %}
+            <svg class="w-10 h-10 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+            {% else %}
+            <svg class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.w-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+            {% endif %}
+            {% if post.caption and post.caption != "" %}
+            <p class="text-white text-xs text-center px-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300 line-clamp-2 drop-shadow">{{ post.caption }}</p>
+            {% endif %}
+          </div>
+          <!-- Video badge -->
+          {% if post.is_video %}
+          <div class="absolute top-2 right-2 bg-gray-950/60 rounded-lg px-2 py-1">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17 10.5V7a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h12a1 1 0 001-1v-3.5l4 4v-11l-4 4z"/>
+            </svg>
+          </div>
+          {% endif %}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Row 2: Spotify + Credentials -->
+    <div class="border-t border-gray-100 pt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+      <!-- Left: Spotify Podcasts -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3 mb-2">
+          <svg class="w-6 h-6 text-[#1DB954] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+          </svg>
+          <h3 class="text-lg font-bold text-gray-900 uppercase tracking-wide">Caro im Podcast</h3>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+          <iframe style="border-radius:0"
+            src="https://open.spotify.com/embed/episode/2Q8uuAj1soJ6lgVyVi2IvC?utm_source=generator&theme=0"
+            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+        </div>
+        <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
+          <iframe style="border-radius:0"
+            src="https://open.spotify.com/embed/episode/3dpqNsq37xv9tdACrLUmdU?utm_source=generator&theme=0"
+            width="100%" height="152" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <!-- Right: Social links + credentials -->
+      <div class="space-y-4">
+
+        <a href="https://www.facebook.com/caro.hundeschule/" target="_blank" rel="noopener"
+           class="group flex items-center gap-5 p-5 rounded-2xl border border-gray-100 bg-gray-50 hover:border-primary/30 hover:bg-primary/5 transition-all shadow-sm">
+          <div class="w-14 h-14 rounded-xl bg-[#1877F2] flex items-center justify-center flex-shrink-0">
+            <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </div>
+          <div>
+            <p class="font-bold text-gray-900 group-hover:text-primary transition-colors">Besuche uns auf Facebook</p>
+            <p class="text-sm text-gray-500">caro.hundeschule · Mehr über uns erfahren</p>
+          </div>
+          <svg class="w-5 h-5 text-gray-400 group-hover:text-primary ml-auto transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <a href="https://www.hundeschulen.de/bhv.html" target="_blank" rel="noopener"
+           class="group flex items-center gap-5 p-5 rounded-2xl border border-gray-100 bg-gray-50 hover:border-primary/30 hover:bg-primary/5 transition-all shadow-sm">
+          <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <span class="text-primary font-black text-lg tracking-tighter">bhv</span>
+          </div>
+          <div>
+            <p class="font-bold text-gray-900 group-hover:text-primary transition-colors">BHV Mitglied</p>
+            <p class="text-sm text-gray-500">Berufsverband der Hundeerzieher/innen und Verhaltensberater/innen e.V.</p>
+          </div>
+          <svg class="w-5 h-5 text-gray-400 group-hover:text-primary ml-auto transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <a href="https://www.gesetze-im-internet.de/tierschg/__11.html" target="_blank" rel="noopener"
+           class="group flex items-center gap-5 p-5 rounded-2xl border border-gray-100 bg-gray-50 hover:border-primary/30 hover:bg-primary/5 transition-all shadow-sm">
+          <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <span class="text-2xl">🐾</span>
+          </div>
+          <div>
+            <p class="font-bold text-gray-900 group-hover:text-primary transition-colors">§11 Tierschutzgesetz</p>
+            <p class="text-sm text-gray-500">Staatlich lizenziert nach §11 TierSchG</p>
+          </div>
+          <svg class="w-5 h-5 text-gray-400 group-hover:text-primary ml-auto transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+        <a href="https://park4night.com/de/place/400440" target="_blank" rel="noopener"
+           class="group flex items-center gap-5 p-5 rounded-2xl border border-gray-100 bg-gray-50 hover:border-primary/30 hover:bg-primary/5 transition-all shadow-sm">
+          <div class="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <span class="text-2xl">🚐</span>
+          </div>
+          <div>
+            <p class="font-bold text-gray-900 group-hover:text-primary transition-colors">Park4Night Gastgeber</p>
+            <p class="text-sm text-gray-500">Stellplatz für Wohnmobil &amp; Wohnwagen – mitten in der Natur, 15 Min. zur S-Bahn</p>
+          </div>
+          <svg class="w-5 h-5 text-gray-400 group-hover:text-primary ml-auto transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Services Grid -->
+<section class="py-24 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold text-primary mb-4 uppercase tracking-wide">Unser Angebot</h2>
+      <p class="text-xl text-gray-600 italic">Für jeden Hund und jedes Ziel das Richtige</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for service in site.data.services %}
+      <a href="{{ '/leistungen/' | relative_url }}#{{ service.slug }}"
+         class="group bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-primary/20 transition-all overflow-hidden">
+        <div class="aspect-square overflow-hidden">
+          <img src="{{ service.image | relative_url }}" alt="{{ service.title }}"
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold text-gray-900 mb-2 group-hover:text-primary transition-colors uppercase tracking-wide">{{ service.title }}</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">{{ service.short }}</p>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Team Teaser -->
+<section class="py-24 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <p class="text-gold font-bold uppercase tracking-widest text-sm mb-4">Unser Team</p>
+        <h2 class="text-4xl font-bold text-primary mb-6 leading-tight uppercase tracking-wide">Erfahren, einfühlsam<br>und mit Leidenschaft</h2>
+        <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+          Caro, Conny und Sepp bringen jahrelange Erfahrung und echte Leidenschaft für Hunde
+          und Menschen mit. Mit wissenschaftlich fundierten Methoden und einem offenen Herz
+          begleiten wir euch durch Training und Alltag.
+        </p>
+        <ul class="space-y-3 mb-10">
+          <li class="flex items-center gap-3 text-gray-700 text-sm">
+            <span class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+            BHV Mitglied
+          </li>
+          <li class="flex items-center gap-3 text-gray-700 text-sm">
+            <span class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+            §11 Tierschutzgesetz lizenziert
+          </li>
+          <li class="flex items-center gap-3 text-gray-700 text-sm">
+            <span class="w-5 h-5 rounded-full bg-primary/10 text-primary flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+            Park4Night zertifizierter Stellplatzanbieter
+          </li>
+        </ul>
+        <a href="{{ '/team/' | relative_url }}"
+           class="inline-flex items-center gap-2 text-gold font-bold hover:gap-3 transition-all uppercase tracking-wide text-sm">
+          Team kennenlernen
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        {% for member in site.data.team %}
+        <div class="text-center">
+          <div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 mb-3">
+            {% if member.image != "" %}
+            <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="w-full h-full object-cover">
+            {% else %}
+            <div class="w-full h-full flex items-center justify-center text-5xl">🐾</div>
+            {% endif %}
+          </div>
+          <p class="font-bold text-gray-900 text-sm">{{ member.name }}</p>
+          <p class="text-gray-500 text-xs mt-0.5">{{ member.role }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Banner -->
+<section class="bg-primary py-24">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-bold text-white mb-4">Bereit für den ersten Schritt?</h2>
+    <p class="text-xl text-orange-100 mb-10">Ruf uns an oder buche deinen Wunschtermin direkt online.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="tel:{{ site.phone | remove: ' ' }}"
+         class="bg-white text-primary font-bold px-8 py-4 rounded-xl hover:bg-orange-50 transition-colors text-lg">
+        {{ site.phone }}
+      </a>
+      <a href="{{ site.booking_url }}" target="_blank" rel="noopener"
+         class="bg-gray-950 text-white font-bold px-8 py-4 rounded-xl hover:bg-gray-800 transition-colors text-lg">
+        Online buchen
+      </a>
+    </div>
+  </div>
+</section>

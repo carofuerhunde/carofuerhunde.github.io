@@ -1,0 +1,11 @@
+# Puppy directory — sorted A–Z on the welpen page.
+# Each entry can have: name, breed, birthdate, available (true/false), image, description
+#
+# Example:
+# - name: "Bella"
+#   breed: "Labrador Retriever"
+#   birthdate: "01.01.2025"
+#   available: true
+#   image: "/assets/images/welpen/bella.jpg"
+#   description: "Bella ist ein verspieltes, aufgewecktes Mädchen."
+[]
