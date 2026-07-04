@@ -1,43 +1,40 @@
-name: Update Instagram feed
+name: Fetch Instagram Posts
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "0 6 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-instagram:
+  fetch:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
-      - name: Fetch Instagram posts
+      - name: Fetch latest Instagram posts
         env:
-          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
-        run: node scripts/fetch_instagram.js
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+        run: node scripts/fetch-instagram.js
 
-      - name: Commit updated Instagram data
+      - name: Commit and push changes
         run: |
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add _data/instagram.json
-
+          git add _data/instagram.json assets/images/instagram/
+          git add -u assets/images/instagram/
           if git diff --cached --quiet; then
-            echo "No changes to commit"
-            exit 0
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update instagram posts [skip ci]"
+            git push
           fi
-
-          git commit -m "Update Instagram feed"
-          git push

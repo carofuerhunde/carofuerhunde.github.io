@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+/* Prevent Alpine.js flash of un-styled content */
+[x-cloak] { display: none !important; }
+
+/* Scan all Jekyll source files for Tailwind classes */
+@source "../../";
+
+@theme {
+  --color-primary: #FF8800;
+  --color-primary-dark: #E67A00;
+  --color-primary-light: #FFF7ED;
+  --color-gold: #fed136;
+  --color-gold-dark: #fec503;
+
+  --font-sans: "Montserrat", system-ui, -apple-system, sans-serif;
+  --font-script: "Kaushan Script", cursive;
+}
+
+.font-script { font-family: var(--font-script); }
