@@ -1,25 +1,35 @@
 #!/usr/bin/env node
 /**
- * Fetches the 4 latest Instagram posts, downloads their images locally,
- * removes images of posts that are no longer in the top 4, and writes
- * _data/instagram.json with local image paths.
+ * Fetches the 4 latest Instagram posts via Instagram Graph API (Business accounts).
  *
- * Required env vars (stored as GitHub Secrets):
- *   INSTAGRAM_ACCESS_TOKEN  – long-lived Instagram Graph API token
+ * Required env var (stored as GitHub Secret):
+ *   INSTAGRAM_ACCESS_TOKEN  – Long-lived Page Access Token (never expires)
+ *                             Permissions needed: instagram_basic, pages_show_list,
+ *                             pages_read_engagement
  *
  * Local usage:
  *   INSTAGRAM_ACCESS_TOKEN=<token> node scripts/fetch-instagram.js
+ *
+ * To get a non-expiring token:
+ *   1. Generate a short-lived User Token in Graph API Explorer (graph.facebook.com/v21.0/explorer)
+ *   2. Exchange for long-lived token (60d):
+ *      GET https://graph.facebook.com/v21.0/oauth/access_token
+ *        ?grant_type=fb_exchange_token&client_id=APP_ID&client_secret=APP_SECRET&fb_exchange_token=SHORT_TOKEN
+ *   3. Get Page Access Token (never expires):
+ *      GET https://graph.facebook.com/v21.0/me/accounts?access_token=LONG_LIVED_TOKEN
+ *      → copy the access_token from the response for your Facebook Page
+ *   4. Store that Page Access Token as the GitHub Secret INSTAGRAM_ACCESS_TOKEN
  */
 
-const https  = require("https");
-const http   = require("http");
-const fs     = require("fs");
-const path   = require("path");
+const https = require("https");
+const http  = require("http");
+const fs    = require("fs");
+const path  = require("path");
 
-const TOKEN      = process.env.INSTAGRAM_ACCESS_TOKEN;
-const ROOT       = path.join(__dirname, "..");
-const IMAGE_DIR  = path.join(ROOT, "assets/images/instagram");
-const JSON_PATH  = path.join(ROOT, "_data/instagram.json");
+const TOKEN     = process.env.INSTAGRAM_ACCESS_TOKEN;
+const ROOT      = path.join(__dirname, "..");
+const IMAGE_DIR = path.join(ROOT, "assets/images/instagram");
+const JSON_PATH = path.join(ROOT, "_data/instagram.json");
 
 if (!TOKEN) {
   console.error("Missing env var: INSTAGRAM_ACCESS_TOKEN");
@@ -29,13 +39,11 @@ if (!TOKEN) {
 const FIELDS = "id,media_type,media_url,thumbnail_url,permalink,caption,timestamp";
 const LIMIT  = 4;
 
-// ── helpers ──────────────────────────────────────────────────────────────────
-
 function fetchJSON(url) {
   return new Promise((resolve, reject) => {
     https.get(url, (res) => {
       let data = "";
-      res.on("data", (chunk) => (data += chunk));
+      res.on("data", chunk => (data += chunk));
       res.on("end", () => {
         try { resolve(JSON.parse(data)); }
         catch (e) { reject(new Error("Invalid JSON: " + data)); }
@@ -46,11 +54,10 @@ function fetchJSON(url) {
 
 function downloadImage(url, destPath) {
   return new Promise((resolve, reject) => {
-    const file    = fs.createWriteStream(destPath);
-    const client  = url.startsWith("https") ? https : http;
+    const file   = fs.createWriteStream(destPath);
+    const client = url.startsWith("https") ? https : http;
 
-    const request = client.get(url, (res) => {
-      // Follow a single redirect (Instagram CDN sometimes redirects)
+    const req = client.get(url, (res) => {
       if (res.statusCode === 301 || res.statusCode === 302) {
         file.close();
         fs.unlinkSync(destPath);
@@ -65,36 +72,55 @@ function downloadImage(url, destPath) {
       file.on("finish", () => file.close(resolve));
     });
 
-    request.on("error", (err) => {
-      fs.unlink(destPath, () => {});
-      reject(err);
-    });
+    req.on("error", err => { fs.unlink(destPath, () => {}); reject(err); });
   });
 }
 
-// ── main ─────────────────────────────────────────────────────────────────────
-
-(async () => {
-  // 1. Refresh long-lived token (valid 60 days; refresh keeps it alive)
-  const refreshUrl = `https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token=${TOKEN}`;
-  const refreshed  = await fetchJSON(refreshUrl);
-  if (refreshed.error) {
-    console.warn("Token refresh failed (continuing):", refreshed.error.message);
-  } else {
-    console.log(`Token refreshed – expires in ~${Math.round(refreshed.expires_in / 86400)} days`);
+async function findIgBusinessAccountId() {
+  // Get all Facebook Pages the token has access to
+  const pagesRes = await fetchJSON(
+    `https://graph.facebook.com/v21.0/me/accounts?access_token=${TOKEN}`
+  );
+  if (pagesRes.error) {
+    throw new Error("Could not get Pages: " + pagesRes.error.message);
   }
 
-  // 2. Load previous post IDs so we can clean up stale images
+  const pages = pagesRes.data || [];
+  if (pages.length === 0) {
+    throw new Error("No Facebook Pages found for this token. Make sure the token has pages_show_list permission.");
+  }
+
+  for (const page of pages) {
+    const pageToken = page.access_token || TOKEN;
+    const igRes = await fetchJSON(
+      `https://graph.facebook.com/v21.0/${page.id}?fields=instagram_business_account&access_token=${pageToken}`
+    );
+    if (igRes.instagram_business_account) {
+      console.log(`Instagram Business Account: ${igRes.instagram_business_account.id} (Page: "${page.name}")`);
+      return { igUserId: igRes.instagram_business_account.id, pageToken };
+    }
+  }
+
+  throw new Error(
+    "No Instagram Business Account found connected to any Facebook Page. " +
+    "Make sure the Instagram account is linked to the Facebook Page."
+  );
+}
+
+(async () => {
+  // 1. Find Instagram Business Account ID via the connected Facebook Page
+  const { igUserId, pageToken } = await findIgBusinessAccountId();
+
+  // 2. Load previous post IDs for stale-image cleanup
   let previousIds = [];
   if (fs.existsSync(JSON_PATH)) {
     try {
-      const prev = JSON.parse(fs.readFileSync(JSON_PATH, "utf8"));
-      previousIds = prev.map((p) => p.id);
+      previousIds = JSON.parse(fs.readFileSync(JSON_PATH, "utf8")).map(p => p.id);
     } catch (_) {}
   }
 
-  // 3. Fetch latest 4 posts from Instagram Graph API
-  const apiUrl = `https://graph.instagram.com/me/media?fields=${FIELDS}&limit=${LIMIT}&access_token=${TOKEN}`;
+  // 3. Fetch latest posts from Instagram Graph API
+  const apiUrl = `https://graph.facebook.com/v21.0/${igUserId}/media?fields=${FIELDS}&limit=${LIMIT}&access_token=${pageToken}`;
   const json   = await fetchJSON(apiUrl);
 
   if (json.error) {
@@ -133,8 +159,8 @@ function downloadImage(url, destPath) {
     });
   }
 
-  // 6. Delete images of posts that are no longer in the top 4
-  const currentIds = posts.map((p) => p.id);
+  // 6. Delete images of posts no longer in the top 4
+  const currentIds = posts.map(p => p.id);
   for (const oldId of previousIds) {
     if (!currentIds.includes(oldId)) {
       const stale = path.join(IMAGE_DIR, `${oldId}.jpg`);
@@ -148,5 +174,5 @@ function downloadImage(url, destPath) {
   // 7. Write JSON
   fs.writeFileSync(JSON_PATH, JSON.stringify(posts, null, 2));
   console.log(`\nSaved ${posts.length} posts to _data/instagram.json`);
-  posts.forEach((p) => console.log(`  [${p.media_type}] ${p.permalink}`));
+  posts.forEach(p => console.log(`  [${p.media_type}] ${p.permalink}`));
 })();
