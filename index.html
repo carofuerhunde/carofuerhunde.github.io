@@ -258,7 +258,7 @@ description: "Caro für Hunde – Professionelles Hundetraining mit Herz. Person
         <div class="text-center">
           <div class="aspect-square rounded-2xl overflow-hidden bg-gray-100 mb-3">
             {% if member.image != "" %}
-            <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="w-full h-full object-cover">
+            <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="w-full h-full object-cover {{ member.image_position | default: 'object-center' }}">
             {% else %}
             <div class="w-full h-full flex items-center justify-center text-5xl">🐾</div>
             {% endif %}
