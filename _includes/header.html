@@ -2,15 +2,15 @@
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
 
-      <a href="{{ '/' | relative_url }}" class="flex flex-col leading-tight">
-        <span class="font-script text-xl text-white">Caro für Hunde</span>
-        <span class="text-white/70 text-xs font-medium tracking-wide">Carotel – Zum bunten Hund</span>
-      </a>
+      <div class="flex flex-col leading-tight">
+        <a href="{{ '/' | relative_url }}" class="font-script text-xl text-white hover:text-gold transition-colors">Caro für Hunde</a>
+        <a href="https://www.carotelzumbuntenhund.de/" target="_blank" rel="noopener" class="text-white/70 text-xs font-medium tracking-wide hover:text-gold transition-colors">Carotel – Zum bunten Hund</a>
+      </div>
 
-      <nav class="hidden md:flex items-center gap-1">
+      <nav class="hidden lg:flex items-center gap-0.5">
         {% for item in site.data.navigation %}
         <a href="{{ item.url | relative_url }}"
-           class="px-4 py-2 rounded-lg text-sm font-semibold text-white uppercase tracking-wide hover:text-gold hover:bg-white/10 transition-colors">
+           class="px-2.5 py-2 rounded-lg text-xs font-semibold text-white uppercase tracking-normal whitespace-nowrap hover:text-gold hover:bg-white/10 transition-colors">
           {{ item.name }}
         </a>
         {% endfor %}
@@ -18,11 +18,11 @@
 
       <div class="flex items-center gap-3">
         <a href="{{ site.booking_url }}" target="_blank" rel="noopener"
-           class="hidden md:inline-flex bg-gold hover:bg-gold-dark text-gray-900 font-bold px-5 py-2 rounded-xl transition-colors text-sm uppercase tracking-wide">
+           class="hidden lg:inline-flex bg-gold hover:bg-gold-dark text-gray-900 font-bold px-4 py-2 rounded-xl transition-colors text-xs uppercase tracking-normal whitespace-nowrap">
           Termin buchen
         </a>
         <button @click="open = !open"
-                class="md:hidden p-2 rounded-lg hover:bg-white/20 transition-colors"
+                class="lg:hidden p-2 rounded-lg hover:bg-white/20 transition-colors"
                 :aria-expanded="open.toString()">
           <svg x-show="!open" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -44,7 +44,7 @@
        x-transition:leave="transition ease-in duration-100"
        x-transition:leave-start="opacity-100 translate-y-0"
        x-transition:leave-end="opacity-0 -translate-y-1"
-       class="md:hidden border-t border-white/20 bg-primary">
+       class="lg:hidden border-t border-white/20 bg-primary">
     <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col gap-1">
       {% for item in site.data.navigation %}
       <a href="{{ item.url | relative_url }}"
