@@ -19,7 +19,7 @@ permalink: /team/
     <div class="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
       <div class="aspect-square bg-gray-100">
         {% if member.image != "" %}
-        <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="w-full h-full object-cover">
+        <img src="{{ member.image | relative_url }}" alt="{{ member.name }}" class="w-full h-full object-cover {{ member.image_position | default: 'object-center' }}">
         {% else %}
         <div class="w-full h-full flex items-center justify-center text-7xl">🐾</div>
         {% endif %}

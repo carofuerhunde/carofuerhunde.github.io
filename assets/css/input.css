@@ -18,3 +18,6 @@
 }
 
 .font-script { font-family: var(--font-script); }
+
+/* Safelist for dynamic object-position values from _data/team.yml */
+@source inline("object-top object-center object-bottom");
