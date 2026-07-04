@@ -29,7 +29,7 @@ jobs:
         with:
           node-version: '20'
       - name: Build Tailwind CSS
-        run: npm ci && npm run build
+        run: npm ci && npm run css:build
       - name: Build Jekyll
         run: bundle exec jekyll build
       - name: Build And Deploy
