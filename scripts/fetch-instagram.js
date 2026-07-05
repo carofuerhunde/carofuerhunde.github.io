@@ -36,8 +36,8 @@ if (!TOKEN) {
   process.exit(1);
 }
 
-const FIELDS = "id,media_type,media_url,thumbnail_url,permalink,caption,timestamp";
-const LIMIT  = 4;
+const FIELDS = "id,media_type,media_url,thumbnail_url,permalink,caption,timestamp,like_count,comments_count,media_product_type";
+const LIMIT  = 12;
 
 function fetchJSON(url) {
   return new Promise((resolve, reject) => {
@@ -151,14 +151,24 @@ async function findIgBusinessAccountId() {
       }
     }
 
+    const ts        = new Date(post.timestamp);
+    const hashtags  = (post.caption || "").match(/#[\wÀ-ɏ]+/g) || [];
+
     posts.push({
-      id:         post.id,
-      media_type: post.media_type,
-      image:      cdnUrl ? webPath : "",
-      permalink:  post.permalink,
-      caption:    (post.caption || "").split("\n")[0].slice(0, 120),
-      timestamp:  post.timestamp,
-      is_video:   post.media_type === "VIDEO",
+      id:                post.id,
+      media_type:        post.media_type,
+      media_product_type: post.media_product_type || "",
+      image:             cdnUrl ? webPath : "",
+      permalink:         post.permalink,
+      caption:           post.caption || "",
+      caption_preview:   (post.caption || "").split("\n")[0].slice(0, 120),
+      hashtags,
+      timestamp:         post.timestamp,
+      posted_weekday:    ts.toLocaleDateString("de-DE", { weekday: "long", timeZone: "Europe/Berlin" }),
+      posted_hour:       ts.toLocaleString("de-DE", { hour: "2-digit", timeZone: "Europe/Berlin" }),
+      like_count:        post.like_count ?? null,
+      comments_count:    post.comments_count ?? null,
+      is_video:          post.media_type === "VIDEO",
     });
   }
 
