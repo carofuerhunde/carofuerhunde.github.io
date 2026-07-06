@@ -59,7 +59,7 @@ description: "Caro für Hunde – Professionelles Hundetraining mit Herz. Person
       </div>
 
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-        {% for post in site.data.instagram %}
+        {% for post in site.data.instagram limit:4 %}
         <a href="{{ post.permalink }}" target="_blank" rel="noopener"
            class="group relative aspect-square rounded-2xl overflow-hidden bg-gray-200 block shadow-sm">
           {% if post.image != "" %}
