@@ -20,26 +20,6 @@
 
     Wir arbeiten **respektvoll, verständnisvoll und belohnungsbasiert** – ohne Gewalt, mit wissenschaftlich fundierten Methoden.
 
-- title: Hundebetreuung
-  slug: hundebetreuung
-  icon: "🏡"
-  image: "/assets/images/services/Tussi.jpeg"
-  short: "Liebevolle Betreuung im Carotel mit Auslauf, Gemeinschaft und persönlicher Fürsorge."
-  details: |
-    Unsere Hundepension bietet eine **liebevolle und fürsorgliche Umgebung** – denn auch Hunde verdienen Urlaub!
-
-    **Was euer Hund bekommt:**
-    - Mindestens 3 Gassigänge täglich (bei Bedarf mehr)
-    - Eigenes Zimmer mit Schlafplatz, Spielzeug und persönlichen Gegenständen
-    - Individuelle Betreuung durch erfahrenes Fachpersonal
-    - Tierarzt jederzeit erreichbar
-
-    **Lizenziert nach §11 Tierschutzgesetz** – höchste Standards in der Tierpflege.
-
-    **Wichtig:** Termine werden vorab vereinbart. Bringen und Abholen nur nach Absprache.
-
-    Aktuelle Preise und Stornierungsbedingungen findest du auf unserer [Preisseite](/preise/).
-
 - title: Alltagstraining
   slug: alltagstraining
   icon: "🦮"
@@ -84,28 +64,6 @@
 
     Zwei speziell ausgebildete **Figuranten** und physiotherapeutisch geschulte Trainer ergänzen unser Team.
 
-- title: Workshops
-  slug: workshops
-  icon: "📚"
-  image: "/assets/images/services/Depperte.jpeg"
-  short: "Praxisnahe Workshops für alle Levels – vor Ort oder auf Anfrage."
-  details: |
-    Ob auf unserem Trainingsgelände oder direkt bei euch – unsere Workshops sind individuell auf euch zugeschnitten.
-
-    **Themenübersicht:**
-    - Grunderziehung (positive Verstärkung, gewaltfrei)
-    - Lösung von Verhaltensproblemen (Bellen, Ängste, Zerstörungsdrang)
-    - Hundesport-Training (IGP, Mondioring, Fährtenarbeit)
-    - **Erste Hilfe am Hund** und **Antigiftköder-Workshop**
-    - Resozialisierung von Hunden mit schwieriger Vergangenheit
-    - Teambuilding und Bindungsstärkung
-    - Paketzusteller-Training
-    - Workshops für Schulklassen und soziale Einrichtungen
-
-    **Dauer:** je nach Thema 2,5 Tage bis 1 Woche. Regelmäßig mit **Gastreferenten**.
-
-    Aktuelle Termine findest du auf unserer [Terminseite](/termine/).
-
 - title: Assistenzhund PTBS
   slug: assistenzhund-ptbs
   icon: "❤️"
@@ -129,3 +87,45 @@
     Am Ende erhält jedes Mensch-Hund-Team ein **Zertifikat** als Nachweis der erfolgreichen Ausbildung.
 
     Unsere Trainer bringen Erfahrung aus der Assistenzhundeausbildung (inkl. Blindenführhunde) mit und arbeiten einfühlsam und strukturiert.
+
+- title: Workshops
+  slug: workshops
+  icon: "📚"
+  image: "/assets/images/services/Depperte.jpeg"
+  short: "Praxisnahe Workshops für alle Levels – vor Ort oder auf Anfrage."
+  details: |
+    Ob auf unserem Trainingsgelände oder direkt bei euch – unsere Workshops sind individuell auf euch zugeschnitten.
+
+    **Themenübersicht:**
+    - Grunderziehung (positive Verstärkung, gewaltfrei)
+    - Lösung von Verhaltensproblemen (Bellen, Ängste, Zerstörungsdrang)
+    - Hundesport-Training (IGP, Mondioring, Fährtenarbeit)
+    - **Erste Hilfe am Hund** und **Antigiftköder-Workshop**
+    - Resozialisierung von Hunden mit schwieriger Vergangenheit
+    - Teambuilding und Bindungsstärkung
+    - Paketzusteller-Training
+    - Workshops für Schulklassen und soziale Einrichtungen
+
+    **Dauer:** je nach Thema 2,5 Tage bis 1 Woche. Regelmäßig mit **Gastreferenten**.
+
+    Aktuelle Termine findest du auf unserer [Terminseite](/termine/).
+
+- title: Hundebetreuung
+  slug: hundebetreuung
+  icon: "🏡"
+  image: "/assets/images/services/Tussi.jpeg"
+  short: "Liebevolle Betreuung im Carotel mit Auslauf, Gemeinschaft und persönlicher Fürsorge."
+  details: |
+    Unsere Hundepension bietet eine **liebevolle und fürsorgliche Umgebung** – denn auch Hunde verdienen Urlaub!
+
+    **Was euer Hund bekommt:**
+    - Mindestens 3 Gassigänge täglich (bei Bedarf mehr)
+    - Eigenes Zimmer mit Schlafplatz, Spielzeug und persönlichen Gegenständen
+    - Individuelle Betreuung durch erfahrenes Fachpersonal
+    - Tierarzt jederzeit erreichbar
+
+    **Lizenziert nach §11 Tierschutzgesetz** – höchste Standards in der Tierpflege.
+
+    **Wichtig:** Termine werden vorab vereinbart. Bringen und Abholen nur nach Absprache.
+
+    Aktuelle Preise und Stornierungsbedingungen findest du auf unserer [Preisseite](/preise/).
