@@ -2,11 +2,12 @@ name: Fetch Instagram Posts
 
 on:
   schedule:
-    - cron: "0 6 * * *"
+    - cron: "0 */2 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   fetch:
@@ -27,14 +28,25 @@ jobs:
         run: node scripts/fetch-instagram.js
 
       - name: Commit and push changes
+        id: commit
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add _data/instagram.json assets/images/instagram/
           git add -u assets/images/instagram/
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "changed=false" >> $GITHUB_OUTPUT
           else
             git commit -m "chore: update instagram posts"
             git push
+            echo "changed=true" >> $GITHUB_OUTPUT
           fi
+
+      - name: Trigger Azure rebuild
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run azure-static-web-apps-brave-smoke-037a8b003.yml \
+            --repo ${{ github.repository }} \
+            --ref main
