@@ -15,7 +15,7 @@
     "timestamp": "2026-07-08T08:00:07+0000",
     "posted_weekday": "Mittwoch",
     "posted_hour": "10 Uhr",
-    "like_count": 0,
+    "like_count": 5,
     "comments_count": 0,
     "is_video": false
   },
@@ -37,7 +37,7 @@
     "timestamp": "2026-07-07T18:45:54+0000",
     "posted_weekday": "Dienstag",
     "posted_hour": "20 Uhr",
-    "like_count": 16,
+    "like_count": 20,
     "comments_count": 1,
     "is_video": true
   },
