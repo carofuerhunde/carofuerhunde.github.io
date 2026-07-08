@@ -1,5 +1,47 @@
 [
   {
+    "id": "18107531120013875",
+    "media_type": "IMAGE",
+    "media_product_type": "FEED",
+    "image": "/assets/images/instagram/18107531120013875.jpg",
+    "permalink": "https://www.instagram.com/p/Dahj9RGCElR/",
+    "caption": "Unsere neue Homepage ist online! 🧡\n Hast du schon reingeschaut?\nModerner, übersichtlicher und voller Inhalte rund um Hundetraining, Seminare und unseren Podcast.\nWir freuen uns auf dein Feedback! 🐾\n👉 Entdecke jetzt, was alles neu ist.\nhttps://www.caro-fuer-hunde.de \n#damitalleswiedercarowird #carohundeschule #hundetraining",
+    "caption_preview": "Unsere neue Homepage ist online! 🧡",
+    "hashtags": [
+      "#damitalleswiedercarowird",
+      "#carohundeschule",
+      "#hundetraining"
+    ],
+    "timestamp": "2026-07-08T08:00:07+0000",
+    "posted_weekday": "Mittwoch",
+    "posted_hour": "10 Uhr",
+    "like_count": 0,
+    "comments_count": 0,
+    "is_video": false
+  },
+  {
+    "id": "17977314198051932",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/17977314198051932.jpg",
+    "permalink": "https://www.instagram.com/reel/DagIwyPtjUE/",
+    "caption": "#damitalleswiedercarowird #carohundeschule #hundetraining #hundeliebe #duunddeinhund",
+    "caption_preview": "#damitalleswiedercarowird #carohundeschule #hundetraining #hundeliebe #duunddeinhund",
+    "hashtags": [
+      "#damitalleswiedercarowird",
+      "#carohundeschule",
+      "#hundetraining",
+      "#hundeliebe",
+      "#duunddeinhund"
+    ],
+    "timestamp": "2026-07-07T18:45:54+0000",
+    "posted_weekday": "Dienstag",
+    "posted_hour": "20 Uhr",
+    "like_count": 16,
+    "comments_count": 1,
+    "is_video": true
+  },
+  {
     "id": "17909801493424411",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -157,38 +199,6 @@
     "posted_hour": "20 Uhr",
     "like_count": 3,
     "comments_count": 0,
-    "is_video": true
-  },
-  {
-    "id": "18097005164468533",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18097005164468533.jpg",
-    "permalink": "https://www.instagram.com/reel/DZA1VwhNfaR/",
-    "caption": "",
-    "caption_preview": "",
-    "hashtags": [],
-    "timestamp": "2026-05-31T18:25:47+0000",
-    "posted_weekday": "Sonntag",
-    "posted_hour": "20 Uhr",
-    "like_count": 1,
-    "comments_count": 0,
-    "is_video": true
-  },
-  {
-    "id": "18066687587389474",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18066687587389474.jpg",
-    "permalink": "https://www.instagram.com/reel/DY-DfQYNMcc/",
-    "caption": "Fährten, ist für jeden Hund ein absoluter SPASS und eine Freude",
-    "caption_preview": "Fährten, ist für jeden Hund ein absoluter SPASS und eine Freude",
-    "hashtags": [],
-    "timestamp": "2026-05-30T16:32:10+0000",
-    "posted_weekday": "Samstag",
-    "posted_hour": "18 Uhr",
-    "like_count": 10,
-    "comments_count": 1,
     "is_video": true
   }
 ]
