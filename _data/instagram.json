@@ -1,5 +1,24 @@
 [
   {
+    "id": "18100573724182501",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18100573724182501.jpg",
+    "permalink": "https://www.instagram.com/reel/DakIwgSgUoc/",
+    "caption": "🐾🧡\n#damitalleswiedercarowird #carohundeschule",
+    "caption_preview": "🐾🧡",
+    "hashtags": [
+      "#damitalleswiedercarowird",
+      "#carohundeschule"
+    ],
+    "timestamp": "2026-07-09T08:00:31+0000",
+    "posted_weekday": "Donnerstag",
+    "posted_hour": "10 Uhr",
+    "like_count": 4,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "18107531120013875",
     "media_type": "IMAGE",
     "media_product_type": "FEED",
@@ -53,7 +72,7 @@
     "timestamp": "2026-06-30T05:42:04+0000",
     "posted_weekday": "Dienstag",
     "posted_hour": "07 Uhr",
-    "like_count": 1,
+    "like_count": 2,
     "comments_count": 0,
     "is_video": true
   },
@@ -182,22 +201,6 @@
     "posted_weekday": "Montag",
     "posted_hour": "12 Uhr",
     "like_count": 1,
-    "comments_count": 0,
-    "is_video": true
-  },
-  {
-    "id": "18060162452707879",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18060162452707879.jpg",
-    "permalink": "https://www.instagram.com/reel/DZA2WfotZ8_/",
-    "caption": "Sind bei uns im Haus alle ein bisschen Schweizer",
-    "caption_preview": "Sind bei uns im Haus alle ein bisschen Schweizer",
-    "hashtags": [],
-    "timestamp": "2026-05-31T18:34:44+0000",
-    "posted_weekday": "Sonntag",
-    "posted_hour": "20 Uhr",
-    "like_count": 3,
     "comments_count": 0,
     "is_video": true
   }
