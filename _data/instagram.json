@@ -1,5 +1,25 @@
 [
   {
+    "id": "18071840522376054",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18071840522376054.jpg",
+    "permalink": "https://www.instagram.com/reel/Damtr--lw0Z/",
+    "caption": "Nicht Hund. Nicht Trainer. Trotzdem der Boss.🐾😉\n #damitalleswiedercarowird #carohundeschule #vierpfoten",
+    "caption_preview": "Nicht Hund. Nicht Trainer. Trotzdem der Boss.🐾😉",
+    "hashtags": [
+      "#damitalleswiedercarowird",
+      "#carohundeschule",
+      "#vierpfoten"
+    ],
+    "timestamp": "2026-07-10T08:01:40+0000",
+    "posted_weekday": "Freitag",
+    "posted_hour": "10 Uhr",
+    "like_count": 7,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "18100573724182501",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -185,22 +205,6 @@
     "posted_weekday": "Montag",
     "posted_hour": "05 Uhr",
     "like_count": 5,
-    "comments_count": 0,
-    "is_video": true
-  },
-  {
-    "id": "18378203128165600",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18378203128165600.jpg",
-    "permalink": "https://www.instagram.com/reel/DZClvOztdli/",
-    "caption": "",
-    "caption_preview": "",
-    "hashtags": [],
-    "timestamp": "2026-06-01T10:48:00+0000",
-    "posted_weekday": "Montag",
-    "posted_hour": "12 Uhr",
-    "like_count": 1,
     "comments_count": 0,
     "is_video": true
   }
