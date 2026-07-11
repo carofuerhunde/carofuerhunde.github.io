@@ -1,5 +1,24 @@
 [
   {
+    "id": "18115573480907344",
+    "media_type": "CAROUSEL_ALBUM",
+    "media_product_type": "FEED",
+    "image": "/assets/images/instagram/18115573480907344.jpg",
+    "permalink": "https://www.instagram.com/p/DapSbQqDZqr/",
+    "caption": "Erkennst du die Körpersprache deines Hundes? 🤔 🐶 🐾\n #damitalleswiedercarowird #carohundeschule",
+    "caption_preview": "Erkennst du die Körpersprache deines Hundes? 🤔 🐶 🐾",
+    "hashtags": [
+      "#damitalleswiedercarowird",
+      "#carohundeschule"
+    ],
+    "timestamp": "2026-07-11T08:00:49+0000",
+    "posted_weekday": "Samstag",
+    "posted_hour": "10 Uhr",
+    "like_count": 0,
+    "comments_count": 0,
+    "is_video": false
+  },
+  {
     "id": "18071840522376054",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -189,22 +208,6 @@
     "posted_weekday": "Dienstag",
     "posted_hour": "19 Uhr",
     "like_count": 1,
-    "comments_count": 0,
-    "is_video": true
-  },
-  {
-    "id": "18268083664291469",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18268083664291469.jpg",
-    "permalink": "https://www.instagram.com/reel/DZT04WOiBL_/",
-    "caption": "Jump",
-    "caption_preview": "Jump",
-    "hashtags": [],
-    "timestamp": "2026-06-08T03:27:41+0000",
-    "posted_weekday": "Montag",
-    "posted_hour": "05 Uhr",
-    "like_count": 5,
     "comments_count": 0,
     "is_video": true
   }
