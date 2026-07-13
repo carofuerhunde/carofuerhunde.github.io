@@ -1,5 +1,24 @@
 [
   {
+    "id": "18447555760136462",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18447555760136462.jpg",
+    "permalink": "https://www.instagram.com/reel/Daub8KliIy0/",
+    "caption": "Motivation bei der Fährtenarbeit 🤗🧡🐾\n #damitalleswiedercarowird #carohundeschule",
+    "caption_preview": "Motivation bei der Fährtenarbeit 🤗🧡🐾",
+    "hashtags": [
+      "#damitalleswiedercarowird",
+      "#carohundeschule"
+    ],
+    "timestamp": "2026-07-13T08:00:37+0000",
+    "posted_weekday": "Montag",
+    "posted_hour": "10 Uhr",
+    "like_count": 1,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "18599138524021393",
     "media_type": "IMAGE",
     "media_product_type": "FEED",
@@ -197,22 +216,6 @@
     "posted_hour": "10 Uhr",
     "like_count": 7,
     "comments_count": 0,
-    "is_video": true
-  },
-  {
-    "id": "18085305965410030",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18085305965410030.jpg",
-    "permalink": "https://www.instagram.com/reel/DZb7qXRNdIT/",
-    "caption": "wann wacht ihr endlich auf?",
-    "caption_preview": "wann wacht ihr endlich auf?",
-    "hashtags": [],
-    "timestamp": "2026-06-11T07:01:06+0000",
-    "posted_weekday": "Donnerstag",
-    "posted_hour": "09 Uhr",
-    "like_count": 35,
-    "comments_count": 7,
     "is_video": true
   }
 ]
