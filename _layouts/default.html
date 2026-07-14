@@ -11,6 +11,110 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js"></script>
   {% seo %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["LocalBusiness", "ProfessionalService", "EducationalOrganization"],
+    "@id": "{{ site.url }}/#organization",
+    "name": "Caro für Hunde",
+    "description": "{{ site.description | escape }}",
+    "url": "{{ site.url }}",
+    "telephone": "{{ site.phone }}",
+    "priceRange": "€€",
+    "image": "{{ site.url }}/assets/images/hero.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Würschnitzer Str. 6",
+      "addressLocality": "Laußnitz",
+      "postalCode": "01936",
+      "addressCountry": "DE"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "51.21355657160025",
+      "longitude": "13.82078958387514"
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Dresden, Laußnitz und Umgebung"
+    },
+    "sameAs": [
+      "https://www.instagram.com/carohundeschule/",
+      "https://www.facebook.com/caro.hundeschule/"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Leistungen",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Personal Coaching",
+            "description": "Individuelles Training für Verhaltensprobleme, Bindungsaufbau und gezielte Förderung.",
+            "url": "{{ site.url }}/leistungen/#personal-coaching"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hundebetreuung",
+            "description": "Liebevolle Betreuung im Carotel mit Auslauf, Gemeinschaft und persönlicher Fürsorge.",
+            "url": "{{ site.url }}/leistungen/#hundebetreuung"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Alltagstraining",
+            "description": "Sicheres und entspanntes Verhalten in echten Alltagssituationen.",
+            "url": "{{ site.url }}/leistungen/#alltagstraining"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hundesport",
+            "description": "Mondioring, IGP, Begleithundeprüfung und Fitnesstraining für aktive Hunde-Teams.",
+            "url": "{{ site.url }}/leistungen/#hundesport"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Workshops",
+            "description": "Praxisnahe Workshops für alle Levels – vor Ort oder auf Anfrage.",
+            "url": "{{ site.url }}/leistungen/#workshops"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Assistenzhund PTBS",
+            "description": "Strukturierte und einfühlsame Ausbildung von PTBS-Assistenzhunden.",
+            "url": "{{ site.url }}/leistungen/#assistenzhund-ptbs"
+          }
+        }
+      ]
+    },
+    "founder": {
+      "@type": "Person",
+      "@id": "{{ site.url }}/team/#caro",
+      "name": "Caro",
+      "jobTitle": "Hundetrainer & Inhaber"
+    }
+  }
+  </script>
+  <!-- TODO: Schema ergänzen sobald verfügbar:
+    - "logo": { "@type": "ImageObject", "url": "{{ site.url }}/assets/images/LOGO_DATEINAME.png" }
+    - "openingHoursSpecification": [ ... ]
+    - "sameAs": Google Business Profile URL ergänzen
+  -->
 </head>
 <body class="bg-white text-gray-900 antialiased">
   {% include header.html %}
