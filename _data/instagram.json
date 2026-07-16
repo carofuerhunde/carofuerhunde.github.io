@@ -1,5 +1,27 @@
 [
   {
+    "id": "18125150062735572",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18125150062735572.jpg",
+    "permalink": "https://www.instagram.com/reel/Da19TGjNP_W/",
+    "caption": "#damitalleswiedercarowird #carohundeschule #hundetraining #hunde #weildeinhundeswertist wie gefällt euch die neue Homepage?",
+    "caption_preview": "#damitalleswiedercarowird #carohundeschule #hundetraining #hunde #weildeinhundeswertist wie gefällt euch die neue Homepa",
+    "hashtags": [
+      "#damitalleswiedercarowird",
+      "#carohundeschule",
+      "#hundetraining",
+      "#hunde",
+      "#weildeinhundeswertist"
+    ],
+    "timestamp": "2026-07-16T06:06:36+0000",
+    "posted_weekday": "Donnerstag",
+    "posted_hour": "08 Uhr",
+    "like_count": 0,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "18447555760136462",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -34,7 +56,7 @@
     "timestamp": "2026-07-12T08:01:17+0000",
     "posted_weekday": "Sonntag",
     "posted_hour": "10 Uhr",
-    "like_count": 7,
+    "like_count": 8,
     "comments_count": 0,
     "is_video": false
   },
@@ -199,22 +221,6 @@
     "posted_weekday": "Samstag",
     "posted_hour": "23 Uhr",
     "like_count": 6,
-    "comments_count": 0,
-    "is_video": true
-  },
-  {
-    "id": "18111632801302355",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18111632801302355.jpg",
-    "permalink": "https://www.instagram.com/reel/DZwpWVMteIq/",
-    "caption": "",
-    "caption_preview": "",
-    "hashtags": [],
-    "timestamp": "2026-06-19T08:04:38+0000",
-    "posted_weekday": "Freitag",
-    "posted_hour": "10 Uhr",
-    "like_count": 7,
     "comments_count": 0,
     "is_video": true
   }
