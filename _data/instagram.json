@@ -1,5 +1,21 @@
 [
   {
+    "id": "18079446089299940",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18079446089299940.jpg",
+    "permalink": "https://www.instagram.com/reel/Da-Sr33tFZF/",
+    "caption": "Fährten",
+    "caption_preview": "Fährten",
+    "hashtags": [],
+    "timestamp": "2026-07-19T11:48:01+0000",
+    "posted_weekday": "Sonntag",
+    "posted_hour": "13 Uhr",
+    "like_count": 1,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "18112708166298836",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -205,22 +221,6 @@
     "posted_weekday": "Sonntag",
     "posted_hour": "10 Uhr",
     "like_count": 9,
-    "comments_count": 0,
-    "is_video": true
-  },
-  {
-    "id": "18329834203267060",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18329834203267060.jpg",
-    "permalink": "https://www.instagram.com/reel/DZ_Yx52C_ZN/",
-    "caption": "Nächster Termin 3. Juli 17:00 Uhr",
-    "caption_preview": "Nächster Termin 3. Juli 17:00 Uhr",
-    "hashtags": [],
-    "timestamp": "2026-06-25T01:28:40+0000",
-    "posted_weekday": "Donnerstag",
-    "posted_hour": "03 Uhr",
-    "like_count": 2,
     "comments_count": 0,
     "is_video": true
   }
