@@ -26,6 +26,18 @@ npm run build
 
 Jekyll 4 static site · Tailwind CSS 4 · Alpine.js 3 (CDN) · German only
 
+For a C4 Context+Container diagram and more detail on deploy/CI, see [`docs/architecture.md`](docs/architecture.md). For the ongoing agent-automation rollout (Jira integration, PR-gated agent loop, etc.), see [`docs/automation-plan.md`](docs/automation-plan.md).
+
+### Deploy
+
+Two deploy pipelines run on every push to `main`:
+- **Azure Static Web Apps** (`.github/workflows/azure-static-web-apps-brave-smoke-037a8b003.yml`) — canonical deploy target (decided 2026-07-23).
+- **GitHub Pages** — legacy, runs in parallel. It cannot be disabled via API/settings because this repo is named `carofuerhunde.github.io` (org/user Pages repo); GitHub refuses deactivation (`422`). Treat Azure as canonical in docs only — both hosts stay live technically.
+
+### Branch naming / Jira convention
+
+Branches follow Jira ticket keys, e.g. `CARO-11`, `HUN-5` — two Jira projects (`CARO`, `HUN`). Convention: ticket → branch (`<KEY>-<number>`) → PR referencing the ticket. This is the intended hook for the future agent automation described in `docs/automation-plan.md` (Milestone M2+): an agent will read a Jira ticket, implement on a matching branch, and open a PR linking back to it.
+
 ### Design tokens
 Defined in `assets/css/input.css` via `@theme`:
 - `--color-primary: #FF8800` → use as `text-primary`, `bg-primary`, `bg-primary/10`, `hover:bg-primary-dark`, etc.

@@ -38,8 +38,11 @@ Requirements werden von Agents automatisch umgesetzt. Startpunkt: PR-gated (Agen
 - Sicherstellen dass `main` sauber baut → erledigt: `bundle install`, `npm install`, `npm run css:build` und `JEKYLL_ENV=production bundle exec jekyll build` laufen fehlerfrei durch. (`npm run build` inkl. `fetch-instagram` schlägt lokal ohne `INSTAGRAM_ACCESS_TOKEN` fehl — erwartet, das Secret existiert nur in CI.)
 - Offen/nicht Teil von M0, aber notiert: `npm audit` meldet 2 critical vulnerabilities — beide `shell-quote` (transitive Dependency von `concurrently`, nur `devDependency` für `npm run dev`, nicht im Produktionsbuild). Fix verfügbar via `npm audit fix`, aber noch nicht angewendet/geprüft (könnte `concurrently`-Major-Version bumpen).
 
-**M1 — Context Engineering (leichtgewichtig)**
-C4-Context+Container-Diagramm (Mermaid) + kurzes `architecture.md` im Repo. `CLAUDE.md` aktualisieren (aktueller Stand, Jira-Konventionen, Branch-Naming dokumentieren). `.claude/settings.json` für dieses Repo auf Automatisierung vorbereiten (Permissions, ggf. Hooks).
+**M1 — Context Engineering (leichtgewichtig)** ✅ (2026-07-23)
+- C4-Context+Container-Diagramm (Mermaid) + kurzes `architecture.md` im Repo → erledigt.
+- `CLAUDE.md` aktualisieren (aktueller Stand, Jira-Konventionen, Branch-Naming dokumentieren) → erledigt.
+- `.claude/settings.json` für dieses Repo auf Automatisierung vorbereiten (Permissions, ggf. Hooks) → Permissions-Allowlist ergänzt (Build-/Git-Read-/`gh pr`-Kommandos, `gh api` eng auf lesbare Sub-Pfade wie `pulls`, `issues`, `commits`, `actions/runs|workflows` beschränkt, sensible Endpunkte wie `pages`, `hooks`, `keys`, `collaborators` explizit auf `deny`).
+- **Offen/blockierend erkannt**: `.gitignore` schließt aktuell das komplette `.claude/`-Verzeichnis aus (Zeile `.claude/`). Dadurch ist `settings.json` nie eingecheckt — die Permissions-Vorbereitung existiert nur lokal auf diesem Rechner, nicht im Repo, und erreicht weder Teammitglieder noch einen künftigen automatisierten Agenten. Muss vor M3 (Scheduled Agent) behoben werden, z.B. durch gezieltes Aufheben des Ignores nur für `settings.json` (nicht für `settings.local.json`). Bewusst noch nicht geändert (Entscheidung 2026-07-23).
 
 **M2 — Jira-Anbindung (Requirement-Quelle)**
 Jira-Site/Projekt(e) anbinden. Konvention definieren: Ticket → Branch (`CARO-xx`, bereits etabliert) → PR mit Ticket-Referenz. Agent liest Ticket, versteht Akzeptanzkriterien, implementiert.
