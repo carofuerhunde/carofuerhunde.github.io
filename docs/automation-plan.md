@@ -10,7 +10,7 @@ Requirements werden von Agents automatisch umgesetzt. Startpunkt: PR-gated (Agen
 
 - **Aktives/kanonisches Repo**: `carofuerhunde/carofuerhunde.github.io` (public, Admin-Zugriff vorhanden). Lokal unter `/Users/Martin.Alter/Documents/homepage/caro-fuer-hunde`.
 - `main` ist bereits der v2-Rebuild (Tailwind CSS 4 + Alpine.js). Der Branch `v2-preview` wurde bereits in `main` gemerged.
-- Das Verzeichnis `/Users/Martin.Alter/Documents/homepage/caro-fuer-hundev2` ist ein **veralteter, verwaister Stand** ohne Git-Remote/Commits — nicht weiter verwenden, kann archiviert/gelöscht werden.
+- Das Verzeichnis `/Users/Martin.Alter/Documents/homepage/caro-fuer-hundev2` war ein **veralteter, verwaister Stand** ohne Git-Remote/Commits — am 2026-07-23 nach `caro-fuer-hundev2.archived-2026-07-23` umbenannt (reversibel, nicht gelöscht). Kann bei Bedarf endgültig entfernt werden.
 - **Zwei parallele Deploy-Pipelines** laufen aktuell bei jedem Push auf `main`:
   - GitHub Pages (`.github/workflows/...` über Pages-Build, Status: `built`, live unter `carofuerhunde.github.io`)
   - Azure Static Web Apps (`.github/workflows/azure-static-web-apps-brave-smoke-037a8b003.yml`)
@@ -32,8 +32,11 @@ Requirements werden von Agents automatisch umgesetzt. Startpunkt: PR-gated (Agen
 
 ## Meilensteine
 
-**M0 — Grundlage bereinigen**
-Deploy-Redundanz auflösen, `caro-fuer-hundev2` archivieren, sicherstellen dass `main` sauber baut/deployed. Kein Coding, nur Aufräumen — Voraussetzung für alles Weitere.
+**M0 — Grundlage bereinigen** ✅ (2026-07-23)
+- Deploy-Redundanz auflösen → **blockiert**: GitHub Pages technisch nicht abschaltbar (s. Ist-Zustand), Azure gilt nur dokumentarisch als kanonisch, beide Deploys laufen weiter.
+- `caro-fuer-hundev2` archivieren → erledigt, umbenannt in `caro-fuer-hundev2.archived-2026-07-23`.
+- Sicherstellen dass `main` sauber baut → erledigt: `bundle install`, `npm install`, `npm run css:build` und `JEKYLL_ENV=production bundle exec jekyll build` laufen fehlerfrei durch. (`npm run build` inkl. `fetch-instagram` schlägt lokal ohne `INSTAGRAM_ACCESS_TOKEN` fehl — erwartet, das Secret existiert nur in CI.)
+- Offen/nicht Teil von M0, aber notiert: `npm audit` meldet 2 critical vulnerabilities — beide `shell-quote` (transitive Dependency von `concurrently`, nur `devDependency` für `npm run dev`, nicht im Produktionsbuild). Fix verfügbar via `npm audit fix`, aber noch nicht angewendet/geprüft (könnte `concurrently`-Major-Version bumpen).
 
 **M1 — Context Engineering (leichtgewichtig)**
 C4-Context+Container-Diagramm (Mermaid) + kurzes `architecture.md` im Repo. `CLAUDE.md` aktualisieren (aktueller Stand, Jira-Konventionen, Branch-Naming dokumentieren). `.claude/settings.json` für dieses Repo auf Automatisierung vorbereiten (Permissions, ggf. Hooks).
