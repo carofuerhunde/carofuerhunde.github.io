@@ -29,7 +29,7 @@
     "timestamp": "2026-07-26T08:00:53+0000",
     "posted_weekday": "Sonntag",
     "posted_hour": "10 Uhr",
-    "like_count": 0,
+    "like_count": 8,
     "comments_count": 0,
     "is_video": false
   },
@@ -55,8 +55,8 @@
     "timestamp": "2026-07-25T16:00:43+0000",
     "posted_weekday": "Samstag",
     "posted_hour": "18 Uhr",
-    "like_count": 15,
-    "comments_count": 3,
+    "like_count": 16,
+    "comments_count": 4,
     "is_video": true
   },
   {
