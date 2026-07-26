@@ -1,5 +1,39 @@
 [
   {
+    "id": "18059770628782690",
+    "media_type": "CAROUSEL_ALBUM",
+    "media_product_type": "FEED",
+    "image": "/assets/images/instagram/18059770628782690.jpg",
+    "permalink": "https://www.instagram.com/p/DbP6W7VDKa0/",
+    "caption": "Konzentration auf dem Platz… 👍🏼\n\n#hundetraining #hundeschule #hundetrainer #dresden #bautzen #sachsen #hundesport \n#unterordnung #schutzdienst #fährte #fährtenhund #carohundeschule #alltagstraining #begleithund #igp #assistenzhund #assistenzhundinausbildung",
+    "caption_preview": "Konzentration auf dem Platz… 👍🏼",
+    "hashtags": [
+      "#hundetraining",
+      "#hundeschule",
+      "#hundetrainer",
+      "#dresden",
+      "#bautzen",
+      "#sachsen",
+      "#hundesport",
+      "#unterordnung",
+      "#schutzdienst",
+      "#fährte",
+      "#fährtenhund",
+      "#carohundeschule",
+      "#alltagstraining",
+      "#begleithund",
+      "#igp",
+      "#assistenzhund",
+      "#assistenzhundinausbildung"
+    ],
+    "timestamp": "2026-07-26T08:00:53+0000",
+    "posted_weekday": "Sonntag",
+    "posted_hour": "10 Uhr",
+    "like_count": 0,
+    "comments_count": 0,
+    "is_video": false
+  },
+  {
     "id": "18143892121538079",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -21,7 +55,7 @@
     "timestamp": "2026-07-25T16:00:43+0000",
     "posted_weekday": "Samstag",
     "posted_hour": "18 Uhr",
-    "like_count": 14,
+    "like_count": 15,
     "comments_count": 3,
     "is_video": true
   },
@@ -212,25 +246,5 @@
     "like_count": 14,
     "comments_count": 0,
     "is_video": true
-  },
-  {
-    "id": "18107531120013875",
-    "media_type": "IMAGE",
-    "media_product_type": "FEED",
-    "image": "/assets/images/instagram/18107531120013875.jpg",
-    "permalink": "https://www.instagram.com/p/Dahj9RGCElR/",
-    "caption": "Unsere neue Homepage ist online! 🧡\n Hast du schon reingeschaut?\nModerner, übersichtlicher und voller Inhalte rund um Hundetraining, Seminare und unseren Podcast.\nWir freuen uns auf dein Feedback! 🐾\n👉 Entdecke jetzt, was alles neu ist.\nhttps://www.caro-fuer-hunde.de \n#damitalleswiedercarowird #carohundeschule #hundetraining",
-    "caption_preview": "Unsere neue Homepage ist online! 🧡",
-    "hashtags": [
-      "#damitalleswiedercarowird",
-      "#carohundeschule",
-      "#hundetraining"
-    ],
-    "timestamp": "2026-07-08T08:00:07+0000",
-    "posted_weekday": "Mittwoch",
-    "posted_hour": "10 Uhr",
-    "like_count": 9,
-    "comments_count": 1,
-    "is_video": false
   }
 ]
