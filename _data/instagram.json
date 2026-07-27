@@ -1,5 +1,28 @@
 [
   {
+    "id": "18074032487403031",
+    "media_type": "IMAGE",
+    "media_product_type": "FEED",
+    "image": "/assets/images/instagram/18074032487403031.jpg",
+    "permalink": "https://www.instagram.com/p/DbSfEtsAYOg/",
+    "caption": "Schon dabei? Melde dich gerne an unter:\nVORSTAND.AIC.DOGGENFREUNDE@GMAIL.COM\noder über uns, wir leiten es dann gerne weiter\n#hundetraining #carohundeschule #hundeschule #hundetrainer #damitalleswiedercarowird #artgerechtestraining",
+    "caption_preview": "Schon dabei? Melde dich gerne an unter:",
+    "hashtags": [
+      "#hundetraining",
+      "#carohundeschule",
+      "#hundeschule",
+      "#hundetrainer",
+      "#damitalleswiedercarowird",
+      "#artgerechtestraining"
+    ],
+    "timestamp": "2026-07-27T08:00:12+0000",
+    "posted_weekday": "Montag",
+    "posted_hour": "10 Uhr",
+    "like_count": 1,
+    "comments_count": 0,
+    "is_video": false
+  },
+  {
     "id": "17912323197245936",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -45,7 +68,7 @@
     "timestamp": "2026-07-26T08:00:53+0000",
     "posted_weekday": "Sonntag",
     "posted_hour": "10 Uhr",
-    "like_count": 16,
+    "like_count": 17,
     "comments_count": 0,
     "is_video": false
   },
@@ -223,25 +246,5 @@
     "like_count": 13,
     "comments_count": 0,
     "is_video": false
-  },
-  {
-    "id": "18071840522376054",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18071840522376054.jpg",
-    "permalink": "https://www.instagram.com/reel/Damtr--lw0Z/",
-    "caption": "Nicht Hund. Nicht Trainer. Trotzdem der Boss.🐾😉\n #damitalleswiedercarowird #carohundeschule #vierpfoten",
-    "caption_preview": "Nicht Hund. Nicht Trainer. Trotzdem der Boss.🐾😉",
-    "hashtags": [
-      "#damitalleswiedercarowird",
-      "#carohundeschule",
-      "#vierpfoten"
-    ],
-    "timestamp": "2026-07-10T08:01:40+0000",
-    "posted_weekday": "Freitag",
-    "posted_hour": "10 Uhr",
-    "like_count": 16,
-    "comments_count": 0,
-    "is_video": true
   }
 ]
