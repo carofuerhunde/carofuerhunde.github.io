@@ -1,5 +1,21 @@
 [
   {
+    "id": "18015796844723054",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18015796844723054.jpg",
+    "permalink": "https://www.instagram.com/reel/Dbgql4VtpnE/",
+    "caption": "",
+    "caption_preview": "",
+    "hashtags": [],
+    "timestamp": "2026-08-01T20:10:41+0000",
+    "posted_weekday": "Samstag",
+    "posted_hour": "22 Uhr",
+    "like_count": 3,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "17944731135264161",
     "media_type": "CAROUSEL_ALBUM",
     "media_product_type": "FEED",
@@ -229,25 +245,5 @@
     "like_count": 5,
     "comments_count": 0,
     "is_video": true
-  },
-  {
-    "id": "18599138524021393",
-    "media_type": "IMAGE",
-    "media_product_type": "FEED",
-    "image": "/assets/images/instagram/18599138524021393.jpg",
-    "permalink": "https://www.instagram.com/p/Dar3RjfjTqR/",
-    "caption": "Schon dabei? Melde dich gerne an unter: \nVORSTAND.AIC.DOGGENFREUNDE@GMAIL.COM\noder über uns, wir leiten es dann gerne weiter 😉#artgerechtestraining \n #damitalleswiedercarowird #carohundeschule",
-    "caption_preview": "Schon dabei? Melde dich gerne an unter: ",
-    "hashtags": [
-      "#artgerechtestraining",
-      "#damitalleswiedercarowird",
-      "#carohundeschule"
-    ],
-    "timestamp": "2026-07-12T08:01:17+0000",
-    "posted_weekday": "Sonntag",
-    "posted_hour": "10 Uhr",
-    "like_count": 8,
-    "comments_count": 0,
-    "is_video": false
   }
 ]
