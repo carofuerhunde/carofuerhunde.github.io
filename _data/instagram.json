@@ -1,5 +1,30 @@
 [
   {
+    "id": "18087957686423538",
+    "media_type": "IMAGE",
+    "media_product_type": "FEED",
+    "image": "/assets/images/instagram/18087957686423538.jpg",
+    "permalink": "https://www.instagram.com/p/DbtF_jrDHJP/",
+    "caption": "➡️ IGP, Mondioring, Fährte, Alltag  und Spiel \n➡️ 04. - 06. 09. 2026\n➡️ Melde dich gerne persönlich bei Caro an \n#hundetraining #fährte #hundeschule #damitalleswiedercarowird #carohundeschule #hundesport #fährtenhund #artgerechtestraining",
+    "caption_preview": "➡️ IGP, Mondioring, Fährte, Alltag  und Spiel ",
+    "hashtags": [
+      "#hundetraining",
+      "#fährte",
+      "#hundeschule",
+      "#damitalleswiedercarowird",
+      "#carohundeschule",
+      "#hundesport",
+      "#fährtenhund",
+      "#artgerechtestraining"
+    ],
+    "timestamp": "2026-08-06T16:00:32+0000",
+    "posted_weekday": "Donnerstag",
+    "posted_hour": "18 Uhr",
+    "like_count": 3,
+    "comments_count": 0,
+    "is_video": false
+  },
+  {
     "id": "18113543980738832",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -231,28 +256,6 @@
     "posted_hour": "00 Uhr",
     "like_count": 2,
     "comments_count": 1,
-    "is_video": true
-  },
-  {
-    "id": "18125150062735572",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18125150062735572.jpg",
-    "permalink": "https://www.instagram.com/reel/Da19TGjNP_W/",
-    "caption": "#damitalleswiedercarowird #carohundeschule #hundetraining #hunde #weildeinhundeswertist wie gefällt euch die neue Homepage?",
-    "caption_preview": "#damitalleswiedercarowird #carohundeschule #hundetraining #hunde #weildeinhundeswertist wie gefällt euch die neue Homepa",
-    "hashtags": [
-      "#damitalleswiedercarowird",
-      "#carohundeschule",
-      "#hundetraining",
-      "#hunde",
-      "#weildeinhundeswertist"
-    ],
-    "timestamp": "2026-07-16T06:06:36+0000",
-    "posted_weekday": "Donnerstag",
-    "posted_hour": "08 Uhr",
-    "like_count": 0,
-    "comments_count": 0,
     "is_video": true
   }
 ]
