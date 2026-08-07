@@ -1,5 +1,27 @@
 [
   {
+    "id": "18017546720875133",
+    "media_type": "IMAGE",
+    "media_product_type": "FEED",
+    "image": "/assets/images/instagram/18017546720875133.jpg",
+    "permalink": "https://www.instagram.com/p/Dbvq1F8DUC3/",
+    "caption": "➡️ neuer Theoriekurs \n➡️ ab dem 9. Oktober 2026 alle zwei Wochen \n➡️ melde dich gerne persönlich bei Caro an\n#hundetrainer #carohundeschule #damitalleswiedercarowird #hundeschule #fairzumhund",
+    "caption_preview": "➡️ neuer Theoriekurs ",
+    "hashtags": [
+      "#hundetrainer",
+      "#carohundeschule",
+      "#damitalleswiedercarowird",
+      "#hundeschule",
+      "#fairzumhund"
+    ],
+    "timestamp": "2026-08-07T16:00:54+0000",
+    "posted_weekday": "Freitag",
+    "posted_hour": "18 Uhr",
+    "like_count": 1,
+    "comments_count": 0,
+    "is_video": false
+  },
+  {
     "id": "18087957686423538",
     "media_type": "IMAGE",
     "media_product_type": "FEED",
@@ -240,22 +262,6 @@
     "posted_hour": "13 Uhr",
     "like_count": 1,
     "comments_count": 0,
-    "is_video": true
-  },
-  {
-    "id": "18112708166298836",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18112708166298836.jpg",
-    "permalink": "https://www.instagram.com/reel/Da8362wtgJc/",
-    "caption": "",
-    "caption_preview": "",
-    "hashtags": [],
-    "timestamp": "2026-07-18T22:34:12+0000",
-    "posted_weekday": "Sonntag",
-    "posted_hour": "00 Uhr",
-    "like_count": 2,
-    "comments_count": 1,
     "is_video": true
   }
 ]
