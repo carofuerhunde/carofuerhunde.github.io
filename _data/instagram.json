@@ -1,5 +1,21 @@
 [
   {
+    "id": "18080422127320537",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18080422127320537.jpg",
+    "permalink": "https://www.instagram.com/reel/DcLNX_XtOg7/",
+    "caption": "Freilauf\n\ncaro Hundeschule ",
+    "caption_preview": "Freilauf",
+    "hashtags": [],
+    "timestamp": "2026-08-18T08:43:42+0000",
+    "posted_weekday": "Dienstag",
+    "posted_hour": "10 Uhr",
+    "like_count": 2,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "18080782802449933",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -11,7 +27,7 @@
     "timestamp": "2026-08-18T07:46:34+0000",
     "posted_weekday": "Dienstag",
     "posted_hour": "09 Uhr",
-    "like_count": 3,
+    "like_count": 6,
     "comments_count": 0,
     "is_video": true
   },
@@ -220,39 +236,5 @@
     "like_count": 18,
     "comments_count": 1,
     "is_video": true
-  },
-  {
-    "id": "18059770628782690",
-    "media_type": "CAROUSEL_ALBUM",
-    "media_product_type": "FEED",
-    "image": "/assets/images/instagram/18059770628782690.jpg",
-    "permalink": "https://www.instagram.com/p/DbP6W7VDKa0/",
-    "caption": "Konzentration auf dem Platz… 👍🏼\n\n#hundetraining #hundeschule #hundetrainer #dresden #bautzen #sachsen #hundesport \n#unterordnung #schutzdienst #fährte #fährtenhund #carohundeschule #alltagstraining #begleithund #igp #assistenzhund #assistenzhundinausbildung",
-    "caption_preview": "Konzentration auf dem Platz… 👍🏼",
-    "hashtags": [
-      "#hundetraining",
-      "#hundeschule",
-      "#hundetrainer",
-      "#dresden",
-      "#bautzen",
-      "#sachsen",
-      "#hundesport",
-      "#unterordnung",
-      "#schutzdienst",
-      "#fährte",
-      "#fährtenhund",
-      "#carohundeschule",
-      "#alltagstraining",
-      "#begleithund",
-      "#igp",
-      "#assistenzhund",
-      "#assistenzhundinausbildung"
-    ],
-    "timestamp": "2026-07-26T08:00:53+0000",
-    "posted_weekday": "Sonntag",
-    "posted_hour": "10 Uhr",
-    "like_count": 21,
-    "comments_count": 0,
-    "is_video": false
   }
 ]
