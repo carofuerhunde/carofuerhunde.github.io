@@ -1,5 +1,37 @@
 [
   {
+    "id": "18223084876335248",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18223084876335248.jpg",
+    "permalink": "https://www.instagram.com/reel/DcOaMAoNjtB/",
+    "caption": "Trainingsferien \ncaro Hundeschule ",
+    "caption_preview": "Trainingsferien ",
+    "hashtags": [],
+    "timestamp": "2026-08-19T15:51:27+0000",
+    "posted_weekday": "Mittwoch",
+    "posted_hour": "17 Uhr",
+    "like_count": 1,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
+    "id": "18105988193147609",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18105988193147609.jpg",
+    "permalink": "https://www.instagram.com/reel/DcON5gAN3Yl/",
+    "caption": "Trainingsferien caro Hundeschule ",
+    "caption_preview": "Trainingsferien caro Hundeschule ",
+    "hashtags": [],
+    "timestamp": "2026-08-19T15:46:51+0000",
+    "posted_weekday": "Mittwoch",
+    "posted_hour": "17 Uhr",
+    "like_count": 0,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "18080422127320537",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -197,44 +229,5 @@
     "like_count": 13,
     "comments_count": 0,
     "is_video": false
-  },
-  {
-    "id": "18074032487403031",
-    "media_type": "IMAGE",
-    "media_product_type": "FEED",
-    "image": "/assets/images/instagram/18074032487403031.jpg",
-    "permalink": "https://www.instagram.com/p/DbSfEtsAYOg/",
-    "caption": "Schon dabei? Melde dich gerne an unter:\nVORSTAND.AIC.DOGGENFREUNDE@GMAIL.COM\noder über uns, wir leiten es dann gerne weiter\n#hundetraining #carohundeschule #hundeschule #hundetrainer #damitalleswiedercarowird #artgerechtestraining",
-    "caption_preview": "Schon dabei? Melde dich gerne an unter:",
-    "hashtags": [
-      "#hundetraining",
-      "#carohundeschule",
-      "#hundeschule",
-      "#hundetrainer",
-      "#damitalleswiedercarowird",
-      "#artgerechtestraining"
-    ],
-    "timestamp": "2026-07-27T08:00:12+0000",
-    "posted_weekday": "Montag",
-    "posted_hour": "10 Uhr",
-    "like_count": 3,
-    "comments_count": 0,
-    "is_video": false
-  },
-  {
-    "id": "17912323197245936",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/17912323197245936.jpg",
-    "permalink": "https://www.instagram.com/reel/DbQjru3tzDv/",
-    "caption": "",
-    "caption_preview": "",
-    "hashtags": [],
-    "timestamp": "2026-07-26T14:03:32+0000",
-    "posted_weekday": "Sonntag",
-    "posted_hour": "16 Uhr",
-    "like_count": 18,
-    "comments_count": 1,
-    "is_video": true
   }
 ]
