@@ -1,5 +1,21 @@
 [
   {
+    "id": "18108541120874069",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18108541120874069.jpg",
+    "permalink": "https://www.instagram.com/reel/Dcf9o2ptHKp/",
+    "caption": "",
+    "caption_preview": "",
+    "hashtags": [],
+    "timestamp": "2026-08-26T10:09:19+0000",
+    "posted_weekday": "Mittwoch",
+    "posted_hour": "12 Uhr",
+    "like_count": 1,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "17918433480225965",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -195,33 +211,5 @@
     "like_count": 4,
     "comments_count": 0,
     "is_video": false
-  },
-  {
-    "id": "18113543980738832",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18113543980738832.jpg",
-    "permalink": "https://www.instagram.com/reel/DbqZoDNgRFY/",
-    "caption": "Fährten am Samstag, den 08.08.2026 um 13 Uhr. Der Treffpunkt ist an der Caro-Hundeschule. \n #carohundeschule #lobedeinenhund #hundetraining #fährte #vierpfoten #hundeschule #damitalleswiedercarowird #fairzumhund #hundesport #fährtenhund #artgerechtestraining",
-    "caption_preview": "Fährten am Samstag, den 08.08.2026 um 13 Uhr. Der Treffpunkt ist an der Caro-Hundeschule. ",
-    "hashtags": [
-      "#carohundeschule",
-      "#lobedeinenhund",
-      "#hundetraining",
-      "#fährte",
-      "#vierpfoten",
-      "#hundeschule",
-      "#damitalleswiedercarowird",
-      "#fairzumhund",
-      "#hundesport",
-      "#fährtenhund",
-      "#artgerechtestraining"
-    ],
-    "timestamp": "2026-08-05T14:54:49+0000",
-    "posted_weekday": "Mittwoch",
-    "posted_hour": "16 Uhr",
-    "like_count": 3,
-    "comments_count": 0,
-    "is_video": true
   }
 ]
