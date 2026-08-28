@@ -1,5 +1,43 @@
 [
   {
+    "id": "17959092096078855",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/17959092096078855.jpg",
+    "permalink": "https://www.instagram.com/reel/DclGCcFtph3/",
+    "caption": "",
+    "caption_preview": "",
+    "hashtags": [],
+    "timestamp": "2026-08-28T09:59:12+0000",
+    "posted_weekday": "Freitag",
+    "posted_hour": "11 Uhr",
+    "like_count": 0,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
+    "id": "18034152389838842",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18034152389838842.jpg",
+    "permalink": "https://www.instagram.com/reel/DclFE6EtjR6/",
+    "caption": "🐾 Klarheit statt Hundetraining nach Bauchgefühl.\n\nBei caro Hundeschule geht es darum, Hundeverhalten verständlich zu machen,\nMissverständnisse aufzuräumen und Training klar und nachvollziehbar aufzubauen.\n\n🧡 Evolution statt Revolution.\n\nMehr Informationen:\nwww.caro-fuer-hunde.de\n\n#caroHundeschule #Hundetraining #Hundeschule #Hundeerziehung #Hundeverhalten Hundesport",
+    "caption_preview": "🐾 Klarheit statt Hundetraining nach Bauchgefühl.",
+    "hashtags": [
+      "#caroHundeschule",
+      "#Hundetraining",
+      "#Hundeschule",
+      "#Hundeerziehung",
+      "#Hundeverhalten"
+    ],
+    "timestamp": "2026-08-28T09:52:20+0000",
+    "posted_weekday": "Freitag",
+    "posted_hour": "11 Uhr",
+    "like_count": 1,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "18108541120874069",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -164,52 +202,5 @@
     "like_count": 3,
     "comments_count": 0,
     "is_video": true
-  },
-  {
-    "id": "18017546720875133",
-    "media_type": "IMAGE",
-    "media_product_type": "FEED",
-    "image": "/assets/images/instagram/18017546720875133.jpg",
-    "permalink": "https://www.instagram.com/p/Dbvq1F8DUC3/",
-    "caption": "➡️ neuer Theoriekurs \n➡️ ab dem 9. Oktober 2026 alle zwei Wochen \n➡️ melde dich gerne persönlich bei Caro an\n#hundetrainer #carohundeschule #damitalleswiedercarowird #hundeschule #fairzumhund",
-    "caption_preview": "➡️ neuer Theoriekurs ",
-    "hashtags": [
-      "#hundetrainer",
-      "#carohundeschule",
-      "#damitalleswiedercarowird",
-      "#hundeschule",
-      "#fairzumhund"
-    ],
-    "timestamp": "2026-08-07T16:00:54+0000",
-    "posted_weekday": "Freitag",
-    "posted_hour": "18 Uhr",
-    "like_count": 4,
-    "comments_count": 0,
-    "is_video": false
-  },
-  {
-    "id": "18087957686423538",
-    "media_type": "IMAGE",
-    "media_product_type": "FEED",
-    "image": "/assets/images/instagram/18087957686423538.jpg",
-    "permalink": "https://www.instagram.com/p/DbtF_jrDHJP/",
-    "caption": "➡️ IGP, Mondioring, Fährte, Alltag  und Spiel \n➡️ 04. - 06. 09. 2026\n➡️ Melde dich gerne persönlich bei Caro an \n#hundetraining #fährte #hundeschule #damitalleswiedercarowird #carohundeschule #hundesport #fährtenhund #artgerechtestraining",
-    "caption_preview": "➡️ IGP, Mondioring, Fährte, Alltag  und Spiel ",
-    "hashtags": [
-      "#hundetraining",
-      "#fährte",
-      "#hundeschule",
-      "#damitalleswiedercarowird",
-      "#carohundeschule",
-      "#hundesport",
-      "#fährtenhund",
-      "#artgerechtestraining"
-    ],
-    "timestamp": "2026-08-06T16:00:32+0000",
-    "posted_weekday": "Donnerstag",
-    "posted_hour": "18 Uhr",
-    "like_count": 4,
-    "comments_count": 0,
-    "is_video": false
   }
 ]
