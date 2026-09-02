@@ -1,5 +1,21 @@
 [
   {
+    "id": "18129068329776324",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18129068329776324.jpg",
+    "permalink": "https://www.instagram.com/reel/DczEriRNIS0/",
+    "caption": "",
+    "caption_preview": "",
+    "hashtags": [],
+    "timestamp": "2026-09-02T20:16:25+0000",
+    "posted_weekday": "Mittwoch",
+    "posted_hour": "22 Uhr",
+    "like_count": 0,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "18068194505571783",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -11,7 +27,7 @@
     "timestamp": "2026-09-02T20:05:10+0000",
     "posted_weekday": "Mittwoch",
     "posted_hour": "22 Uhr",
-    "like_count": 2,
+    "like_count": 6,
     "comments_count": 0,
     "is_video": true
   },
@@ -179,22 +195,6 @@
     "posted_hour": "09 Uhr",
     "like_count": 11,
     "comments_count": 0,
-    "is_video": true
-  },
-  {
-    "id": "18615125161010529",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18615125161010529.jpg",
-    "permalink": "https://www.instagram.com/reel/DcJcIR7t-3-/",
-    "caption": "Trainingsreise, caro Hundeschule\n\nErster Tag",
-    "caption_preview": "Trainingsreise, caro Hundeschule",
-    "hashtags": [],
-    "timestamp": "2026-08-17T16:24:00+0000",
-    "posted_weekday": "Montag",
-    "posted_hour": "18 Uhr",
-    "like_count": 12,
-    "comments_count": 2,
     "is_video": true
   }
 ]
