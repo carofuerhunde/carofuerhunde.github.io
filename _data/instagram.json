@@ -1,5 +1,21 @@
 [
   {
+    "id": "18027286010683653",
+    "media_type": "IMAGE",
+    "media_product_type": "FEED",
+    "image": "/assets/images/instagram/18027286010683653.jpg",
+    "permalink": "https://www.instagram.com/p/Dc8TnsBNcaS/",
+    "caption": "",
+    "caption_preview": "",
+    "hashtags": [],
+    "timestamp": "2026-09-06T10:19:44+0000",
+    "posted_weekday": "Sonntag",
+    "posted_hour": "12 Uhr",
+    "like_count": 2,
+    "comments_count": 0,
+    "is_video": false
+  },
+  {
     "id": "18129068329776324",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -178,22 +194,6 @@
     "posted_weekday": "Dienstag",
     "posted_hour": "10 Uhr",
     "like_count": 5,
-    "comments_count": 0,
-    "is_video": true
-  },
-  {
-    "id": "18080782802449933",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18080782802449933.jpg",
-    "permalink": "https://www.instagram.com/reel/DcLFsuutiB3/",
-    "caption": "Trainingsferien \ncaro Hundeschule ",
-    "caption_preview": "Trainingsferien ",
-    "hashtags": [],
-    "timestamp": "2026-08-18T07:46:34+0000",
-    "posted_weekday": "Dienstag",
-    "posted_hour": "09 Uhr",
-    "like_count": 11,
     "comments_count": 0,
     "is_video": true
   }
