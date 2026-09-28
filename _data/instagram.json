@@ -1,5 +1,21 @@
 [
   {
+    "id": "17902603794664659",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/17902603794664659.jpg",
+    "permalink": "https://www.instagram.com/reel/Dd0mXl8NQ8D/",
+    "caption": "Wir starten wieder",
+    "caption_preview": "Wir starten wieder",
+    "hashtags": [],
+    "timestamp": "2026-09-28T07:01:31+0000",
+    "posted_weekday": "Montag",
+    "posted_hour": "09 Uhr",
+    "like_count": 4,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "18628104502047756",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -179,22 +195,6 @@
     "posted_hour": "17 Uhr",
     "like_count": 7,
     "comments_count": 2,
-    "is_video": true
-  },
-  {
-    "id": "18105988193147609",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18105988193147609.jpg",
-    "permalink": "https://www.instagram.com/reel/DcON5gAN3Yl/",
-    "caption": "Trainingsferien caro Hundeschule ",
-    "caption_preview": "Trainingsferien caro Hundeschule ",
-    "hashtags": [],
-    "timestamp": "2026-08-19T15:46:51+0000",
-    "posted_weekday": "Mittwoch",
-    "posted_hour": "17 Uhr",
-    "like_count": 5,
-    "comments_count": 0,
     "is_video": true
   }
 ]
