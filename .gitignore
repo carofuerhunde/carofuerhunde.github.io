@@ -7,5 +7,6 @@ vendor/
 node_modules/
 assets/css/main.css
 .claude/
+.env.etermin
 # HyperFrames-Videoprojekte (lokal, nicht Teil der Website)
 videos/

@@ -6,7 +6,8 @@
     "css:build": "tailwindcss -i ./assets/css/input.css -o ./assets/css/main.css --minify",
     "dev": "concurrently \"npm run css:watch\" \"bundle exec jekyll serve --livereload\"",
     "fetch-instagram": "node scripts/fetch-instagram.js",
-    "build": "npm run fetch-instagram && npm run css:build && JEKYLL_ENV=production bundle exec jekyll build"
+    "build": "npm run fetch-instagram && npm run css:build && JEKYLL_ENV=production bundle exec jekyll build",
+    "etermin": "node scripts/etermin.js"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.0.0",
