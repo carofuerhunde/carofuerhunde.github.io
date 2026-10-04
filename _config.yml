@@ -4,6 +4,7 @@ baseurl: ""
 url: "https://www.caro-fuer-hunde.de"
 lang: de
 phone: "+49 160 96211220"
+email: "kontakt@caro-fuer-hunde.de"
 booking_url: "https://www.eTermin.net/caro-fuer-hunde"
 
 plugins:
