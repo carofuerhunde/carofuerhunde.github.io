@@ -6,7 +6,7 @@ permalink: /impressum/
 
 ## Angaben gemäß §5 TMG
 
-**carotel – caro Hundeschule**  
+**caro Hundeschule**  
 Inhaber: Herr Uwe Carolus  
 Würschnitzer Str. 6  
 01936 Laußnitz
