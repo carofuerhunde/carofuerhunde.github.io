@@ -10,3 +10,5 @@ assets/css/main.css
 .env.etermin
 # Lokale Arbeitsdokumente (Apple Pages) – enthalten Vertrags-/Kundentexte
 *.pages
+# HyperFrames-Videoprojekte (lokal, nicht Teil der Website)
+videos/
