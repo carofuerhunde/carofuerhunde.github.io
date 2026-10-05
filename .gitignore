@@ -7,3 +7,5 @@ vendor/
 node_modules/
 assets/css/main.css
 .claude/
+# HyperFrames-Videoprojekte (lokal, nicht Teil der Website)
+videos/
