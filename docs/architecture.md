@@ -20,7 +20,7 @@ C4Context
     System_Ext(formspree, "Formspree", "Verarbeitet Kontaktformular-Einsendungen")
     System_Ext(etermin, "eTermin.net", "Terminbuchung für Workshops/Kurse")
     System_Ext(instagram, "Instagram Graph API", "Liefert die letzten Posts für die Startseite")
-    System_Ext(jira, "Jira (geplant, M2+)", "Requirement-Quelle: Tickets CARO-xx, HUN-xx")
+    System_Ext(jira, "Jira (geplant, M2+)", "Requirement-Quelle: Tickets CARO-xx")
 
     Rel(besucher, site, "besucht, sendet Kontaktanfrage, bucht Termin")
     Rel(caro, github, "pflegt Inhalte via Git/PR")
