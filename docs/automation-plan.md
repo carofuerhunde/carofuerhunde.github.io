@@ -16,7 +16,7 @@ Requirements werden von Agents automatisch umgesetzt. Startpunkt: PR-gated (Agen
   - Azure Static Web Apps (`.github/workflows/azure-static-web-apps-brave-smoke-037a8b003.yml`)
   → **Entschieden (2026-07-23)**: Azure Static Web Apps bleibt kanonisches Deploy-Ziel. GitHub Pages sollte entfernt werden, ist aber technisch nicht abschaltbar: Repo heißt `carofuerhunde.github.io` (Org/User-Pages-Repo), GitHub verweigert die Deaktivierung über die API (`422 Deactivating GitHub pages for this repository is not allowed`) — vermutlich auch über die Settings-UI nicht möglich, da an den Repo-Namen gekoppelt. Pages bleibt daher parallel aktiv; Azure gilt als kanonisch nur auf Doku-/DNS-Ebene, technisch laufen weiterhin beide Deploys.
 - **Bestehende Automatisierung als Präzedenzfall**: `.github/workflows/instagram.yml` läuft alle 2h per Cron und committet automatisch Instagram-Post-Updates — funktionierendes Beispiel für "Agent läuft regelmäßig und verändert das Repo".
-- **Branch-Namenskonvention deutet auf Jira hin**: Branches wie `CARO-2`, `CARO-11`, `CARO-16`, `CARO-21`, `HUN-5` legen zwei Jira-Projekte nahe (Keys `CARO` und ggf. ein zweites Projekt `HUN`). Für die Jira-Anbindung (Milestone 2) werden noch benötigt: Jira-Site-URL, relevante Projekt-Key(s), Auth-Weg (API-Token oder MCP-Integration).
+- **Branch-Namenskonvention folgt Jira**: Ältere Branches wie `CARO-2`, `CARO-11`, `CARO-16`, `CARO-21`, `HUN-5` stammen aus dem früheren Jira-Setup. Das Projekt `CARO` wurde im Oktober 2026 neu angelegt (alte Tickets gelöscht), `HUN` existiert nicht mehr. Single Point für Aufgaben ist jetzt `CARO` auf `martinalter-itconsulting.atlassian.net` (Details in `CLAUDE.md`).
 
 ## Bestätigte Entscheidungen
 
@@ -27,7 +27,7 @@ Requirements werden von Agents automatisch umgesetzt. Startpunkt: PR-gated (Agen
 
 ## Offene Punkte (vor Umsetzung zu klären)
 
-1. Jira-Site-URL + relevante Projekt-Key(s) + Auth-Methode.
+1. ~~Jira-Site-URL + Projekt-Key(s) + Auth-Methode~~ → geklärt (2026-10-06): Site `martinalter-itconsulting.atlassian.net`, Projekt `CARO`, Auth über den Atlassian-MCP-Connector (claude.ai).
 2. Arbeitsverzeichnis für zukünftige Sessions/Scheduled-Agents ist ab jetzt `/Users/Martin.Alter/Documents/homepage/caro-fuer-hunde` (nicht mehr `caro-fuer-hundev2`) — `CLAUDE.md`/`.claude/settings.json` hier ggf. an die Automatisierung anpassen.
 
 ## Meilensteine
@@ -44,8 +44,8 @@ Requirements werden von Agents automatisch umgesetzt. Startpunkt: PR-gated (Agen
 - `.claude/settings.json` für dieses Repo auf Automatisierung vorbereiten (Permissions, ggf. Hooks) → Permissions-Allowlist ergänzt (Build-/Git-Read-/`gh pr`-Kommandos, `gh api` eng auf lesbare Sub-Pfade wie `pulls`, `issues`, `commits`, `actions/runs|workflows` beschränkt, sensible Endpunkte wie `pages`, `hooks`, `keys`, `collaborators` explizit auf `deny`).
 - **Offen/blockierend erkannt**: `.gitignore` schließt aktuell das komplette `.claude/`-Verzeichnis aus (Zeile `.claude/`). Dadurch ist `settings.json` nie eingecheckt — die Permissions-Vorbereitung existiert nur lokal auf diesem Rechner, nicht im Repo, und erreicht weder Teammitglieder noch einen künftigen automatisierten Agenten. Muss vor M3 (Scheduled Agent) behoben werden, z.B. durch gezieltes Aufheben des Ignores nur für `settings.json` (nicht für `settings.local.json`). Bewusst noch nicht geändert (Entscheidung 2026-07-23).
 
-**M2 — Jira-Anbindung (Requirement-Quelle)**
-Jira-Site/Projekt(e) anbinden. Konvention definieren: Ticket → Branch (`CARO-xx`, bereits etabliert) → PR mit Ticket-Referenz. Agent liest Ticket, versteht Akzeptanzkriterien, implementiert.
+**M2 — Jira-Anbindung (Requirement-Quelle)** (Anbindung ✅ 2026-10-06, Zugriff geprüft; Backlog derzeit leer)
+Jira-Projekt `CARO` ist angebunden und als einziger Aufgaben-Ort in `CLAUDE.md` hinterlegt. Konvention: Ticket → Branch (`CARO-xx`) → PR mit Ticket-Referenz. Agent liest Ticket, versteht Akzeptanzkriterien, implementiert.
 
 **M3 — PR-gated Agent-Loop**
 Scheduled Agent (z.B. via `/schedule`) pollt Jira periodisch nach offenen Tickets, implementiert, öffnet PR, verlinkt Ticket. Mensch reviewt und merged manuell. Review-Gates (`code-review`, `verify`) laufen automatisch auf jedem PR.
