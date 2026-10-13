@@ -1,5 +1,21 @@
 [
   {
+    "id": "18022955636706488",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18022955636706488.jpg",
+    "permalink": "https://www.instagram.com/reel/DebZa_FtrRE/",
+    "caption": "",
+    "caption_preview": "",
+    "hashtags": [],
+    "timestamp": "2026-10-13T08:38:43+0000",
+    "posted_weekday": "Dienstag",
+    "posted_hour": "10 Uhr",
+    "like_count": 3,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "18017008364953246",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -178,22 +194,6 @@
     "posted_weekday": "Dienstag",
     "posted_hour": "22 Uhr",
     "like_count": 7,
-    "comments_count": 0,
-    "is_video": true
-  },
-  {
-    "id": "17959092096078855",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/17959092096078855.jpg",
-    "permalink": "https://www.instagram.com/reel/DclGCcFtph3/",
-    "caption": "",
-    "caption_preview": "",
-    "hashtags": [],
-    "timestamp": "2026-08-28T09:59:12+0000",
-    "posted_weekday": "Freitag",
-    "posted_hour": "11 Uhr",
-    "like_count": 1,
     "comments_count": 0,
     "is_video": true
   }
