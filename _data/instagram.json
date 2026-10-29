@@ -1,5 +1,21 @@
 [
   {
+    "id": "18213791722315315",
+    "media_type": "VIDEO",
+    "media_product_type": "REELS",
+    "image": "/assets/images/instagram/18213791722315315.jpg",
+    "permalink": "https://www.instagram.com/reel/DfEctBhN73V/",
+    "caption": "Wir haben auch eine Trainingshalle😂😂",
+    "caption_preview": "Wir haben auch eine Trainingshalle😂😂",
+    "hashtags": [],
+    "timestamp": "2026-10-29T07:15:53+0000",
+    "posted_weekday": "Donnerstag",
+    "posted_hour": "08 Uhr",
+    "like_count": 1,
+    "comments_count": 0,
+    "is_video": true
+  },
+  {
     "id": "18034352576854514",
     "media_type": "VIDEO",
     "media_product_type": "REELS",
@@ -199,22 +215,6 @@
     "posted_weekday": "Dienstag",
     "posted_hour": "10 Uhr",
     "like_count": 4,
-    "comments_count": 0,
-    "is_video": true
-  },
-  {
-    "id": "18017008364953246",
-    "media_type": "VIDEO",
-    "media_product_type": "REELS",
-    "image": "/assets/images/instagram/18017008364953246.jpg",
-    "permalink": "https://www.instagram.com/reel/DeOXyJCtCKe/",
-    "caption": "sei dabei, auch gern online ! \nAnfragen per Email ",
-    "caption_preview": "sei dabei, auch gern online ! ",
-    "hashtags": [],
-    "timestamp": "2026-10-08T07:14:05+0000",
-    "posted_weekday": "Donnerstag",
-    "posted_hour": "09 Uhr",
-    "like_count": 1,
     "comments_count": 0,
     "is_video": true
   }
