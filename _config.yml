@@ -22,3 +22,11 @@ exclude:
   - package-lock.json
   - vendor/
   - videos/
+  # Interne Repo-Dateien – nicht auf der Website veröffentlichen
+  - CLAUDE.md
+  - AGENTS.md
+  - README.md
+  - docs/
+  - scripts/
+  - "*.sh"
+  - "*.pages"
