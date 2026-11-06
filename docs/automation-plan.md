@@ -33,7 +33,7 @@ Requirements werden von Agents automatisch umgesetzt. Startpunkt: PR-gated (Agen
 ## Meilensteine
 
 **M0 — Grundlage bereinigen** ✅ (2026-07-23)
-- Deploy-Redundanz auflösen → **blockiert**: GitHub Pages technisch nicht abschaltbar (s. Ist-Zustand), Azure gilt nur dokumentarisch als kanonisch, beide Deploys laufen weiter.
+- Deploy-Redundanz auflösen → **erledigt (2026-11-06, CARO-34)**: Azure-Subscription deaktiviert, Azure-Workflow entfernt. GitHub Pages (`pages.yml`) ist einziges Deploy-Ziel.
 - `caro-fuer-hundev2` archivieren → erledigt, umbenannt in `caro-fuer-hundev2.archived-2026-07-23`.
 - Sicherstellen dass `main` sauber baut → erledigt: `bundle install`, `npm install`, `npm run css:build` und `JEKYLL_ENV=production bundle exec jekyll build` laufen fehlerfrei durch. (`npm run build` inkl. `fetch-instagram` schlägt lokal ohne `INSTAGRAM_ACCESS_TOKEN` fehl — erwartet, das Secret existiert nur in CI.)
 - Offen/nicht Teil von M0, aber notiert: `npm audit` meldet 2 critical vulnerabilities — beide `shell-quote` (transitive Dependency von `concurrently`, nur `devDependency` für `npm run dev`, nicht im Produktionsbuild). Fix verfügbar via `npm audit fix`, aber noch nicht angewendet/geprüft (könnte `concurrently`-Major-Version bumpen).

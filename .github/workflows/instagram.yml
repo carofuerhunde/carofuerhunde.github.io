@@ -42,11 +42,11 @@ jobs:
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Trigger Azure rebuild
+      - name: Trigger GitHub Pages rebuild
         if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh workflow run azure-static-web-apps-brave-smoke-037a8b003.yml \
+          gh workflow run pages.yml \
             --repo ${{ github.repository }} \
             --ref main
