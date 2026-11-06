@@ -30,9 +30,9 @@ For a C4 Context+Container diagram and more detail on deploy/CI, see [`docs/arch
 
 ### Deploy
 
-Two deploy pipelines run on every push to `main`:
-- **Azure Static Web Apps** (`.github/workflows/azure-static-web-apps-brave-smoke-037a8b003.yml`) — canonical deploy target (decided 2026-07-23).
-- **GitHub Pages** — legacy, runs in parallel. It cannot be disabled via API/settings because this repo is named `carofuerhunde.github.io` (org/user Pages repo); GitHub refuses deactivation (`422`). Treat Azure as canonical in docs only — both hosts stay live technically.
+**GitHub Pages** is the only deploy target (since 2026-11-06, CARO-34): `.github/workflows/pages.yml` builds (`npm ci && npm run css:build`, `jekyll build`) and deploys on every push to `main`. PRs only run the build. `workflow_dispatch` takes an optional `ref` to publish a specific branch/tag/SHA. `instagram.yml` triggers it explicitly after committing new posts (pushes by `GITHUB_TOKEN` don't trigger workflows). Custom domain `www.caro-fuer-hunde.de` (`CNAME` file + Settings → Pages); the apex domain redirects to `www` at the DNS provider.
+
+Azure Static Web Apps (canonical from 2026-07-23) was dropped after its subscription was deactivated; its workflow is removed but can be restored from Git history.
 
 ### Branch naming / Jira convention
 
