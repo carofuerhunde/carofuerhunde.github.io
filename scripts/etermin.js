@@ -35,7 +35,10 @@ function loadEnvFile() {
   if (!fs.existsSync(ENV_FILE)) return;
   for (const line of fs.readFileSync(ENV_FILE, "utf8").split(/\r?\n/)) {
     const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*?)\s*$/);
-    if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^["']|["']$/g, "");
+    if (!m || process.env[m[1]]) continue;
+    // Quoted values are taken literally; unquoted values drop a trailing " # comment".
+    const q = m[2].match(/^(["'])(.*)\1(\s+#.*)?$/);
+    process.env[m[1]] = q ? q[2] : m[2].replace(/\s+#.*$/, "");
   }
 }
 
@@ -55,7 +58,8 @@ async function main() {
   const args    = process.argv.slice(2);
   const confirm = args.includes("--yes");
   const rest    = args.filter((a) => a !== "--yes");
-  if (rest.length < 2 || rest[0] === "-h" || rest[0] === "--help") usage(rest.length < 2 ? 1 : 0);
+  if (rest[0] === "-h" || rest[0] === "--help") usage(0);
+  if (rest.length < 2) usage(1);
 
   const method   = rest[0].toUpperCase();
   const resource = rest[1].replace(/^\/?(api\/)?/, "");
