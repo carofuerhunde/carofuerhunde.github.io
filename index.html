@@ -101,9 +101,11 @@ description: "Caro für Hunde – Professionelles Hundetraining mit Herz. Person
     </div>
 
     <!-- Row 2: Spotify + Credentials -->
-    <div class="border-t border-gray-100 pt-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+    {% assign podcasts = site.data.podcasts %}
+    <div class="border-t border-gray-100 pt-16 grid grid-cols-1 {% if podcasts.size > 0 %}lg:grid-cols-2{% endif %} gap-12 items-start">
 
-      <!-- Left: Spotify Podcasts -->
+      {% if podcasts.size > 0 %}
+      <!-- Left: Podcasts (_data/podcasts.yml) -->
       <div class="space-y-4">
         <div class="flex items-center gap-3 mb-2">
           <svg class="w-6 h-6 text-[#1DB954] flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
@@ -111,21 +113,33 @@ description: "Caro für Hunde – Professionelles Hundetraining mit Herz. Person
           </svg>
           <h3 class="text-lg font-bold text-gray-900 uppercase tracking-wide">Caro im Podcast</h3>
         </div>
+        {% for podcast in podcasts %}
+        {% if podcast.spotify_episode %}
         <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
-          <iframe style="border-radius:0"
-            src="https://open.spotify.com/embed/episode/2Q8uuAj1soJ6lgVyVi2IvC?utm_source=generator&theme=0"
+          <iframe style="border-radius:0" title="{{ podcast.title | escape }}"
+            src="https://open.spotify.com/embed/episode/{{ podcast.spotify_episode }}?utm_source=generator&theme=0"
             width="100%" height="152" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
             loading="lazy"></iframe>
         </div>
+        {% elsif podcast.apple_episode %}
         <div class="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
-          <iframe style="border-radius:0"
-            src="https://open.spotify.com/embed/episode/3dpqNsq37xv9tdACrLUmdU?utm_source=generator&theme=0"
-            width="100%" height="152" frameBorder="0" allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          <iframe title="{{ podcast.title | escape }}"
+            src="https://embed.podcasts.apple.com/de/episode/{{ podcast.apple_episode }}"
+            width="100%" height="175" frameBorder="0" style="overflow:hidden"
+            allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
             loading="lazy"></iframe>
         </div>
+        {% elsif podcast.audio %}
+        <div class="p-5 rounded-2xl border border-gray-100 bg-gray-50 shadow-sm space-y-3">
+          <p class="font-semibold text-gray-900">{{ podcast.title }}</p>
+          <audio controls preload="none" class="w-full" src="{{ podcast.audio | relative_url }}"></audio>
+        </div>
+        {% endif %}
+        {% endfor %}
       </div>
+      {% endif %}
 
       <!-- Right: Social links + credentials -->
       <div class="space-y-4">

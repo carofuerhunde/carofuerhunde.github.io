@@ -60,6 +60,7 @@ All content that repeats across pages lives here:
 - `services.yml` — 6 service cards with `slug`, `icon`, `short`, `details` (details rendered via `| markdownify`)
 - `team.yml` — team member profiles
 - `welpen.yml` — puppy directory (sorted A–Z in `welpen.html`)
+- `podcasts.yml` — "Caro im Podcast" episodes on the home page (`spotify_episode` ID, `apple_episode` ID or self-hosted `audio`); section hidden while empty
 
 ### Layouts & includes
 - `_layouts/default.html` — base layout; loads Inter font, Tailwind CSS, Alpine.js CDN, jekyll-seo-tag
