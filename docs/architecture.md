@@ -43,7 +43,7 @@ C4Container
     System_Boundary(repo, "carofuerhunde/carofuerhunde.github.io") {
         Container(jekyll, "Jekyll-Site", "Jekyll 4, Ruby", "Layouts, Includes, Seiten (index, leistungen, team, preise, termine, welpen, kontakt, impressum, datenschutz)")
         Container(tailwind, "Tailwind Build", "Tailwind CSS 4", "input.css -> main.css, Design-Tokens in @theme")
-        Container(alpine, "Alpine.js", "Alpine.js 3 (CDN)", "Mobile-Menü, kleine Interaktivität im Browser")
+        Container(alpine, "Alpine.js", "Alpine.js 3 (self-hosted)", "Mobile-Menü, kleine Interaktivität im Browser")
         Container(data, "_data/*.yml + instagram.json", "YAML/JSON", "Navigation, Services, Team, Welpen, Instagram-Cache")
         Container(instaScript, "fetch-instagram.js", "Node-Script", "Holt Posts via Instagram Graph API, schreibt _data/instagram.json")
         Container(ciPages, "Pages Workflow", "GitHub Actions (pages.yml)", "npm ci, css:build, jekyll build, Deploy zu GitHub Pages")
@@ -59,7 +59,7 @@ C4Container
     Rel(caro, jekyll, "bearbeitet Inhalte via Git")
     Rel(jekyll, data, "liest zur Build-Zeit")
     Rel(jekyll, tailwind, "bindet main.css ein")
-    Rel(jekyll, alpine, "lädt via CDN im Layout")
+    Rel(jekyll, alpine, "liefert assets/js/alpine.min.js aus")
     Rel(ciPages, jekyll, "baut")
     Rel(ciPages, ghpagesHost, "deployed")
     Rel(ciInsta, instaScript, "führt aus")

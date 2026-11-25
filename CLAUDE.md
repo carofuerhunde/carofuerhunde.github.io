@@ -24,7 +24,9 @@ npm run build
 
 ## Architecture
 
-Jekyll 4 static site · Tailwind CSS 4 · Alpine.js 3 (CDN) · German only
+Jekyll 4 static site · Tailwind CSS 4 · Alpine.js 3 (self-hosted) · German only
+
+No third-party requests on page load for fonts or scripts: Montserrat and Kaushan Script (woff2) live in `assets/fonts/` with `@font-face` in `assets/css/input.css`; Alpine.js 3.14.3 lives in `assets/js/alpine.min.js`. Keep it that way (GDPR) — don't add CDN links.
 
 For a C4 Context+Container diagram and more detail on deploy/CI, see [`docs/architecture.md`](docs/architecture.md). For the ongoing agent-automation rollout (Jira integration, PR-gated agent loop, etc.), see [`docs/automation-plan.md`](docs/automation-plan.md).
 
@@ -63,7 +65,7 @@ All content that repeats across pages lives here:
 - `podcasts.yml` — "Caro im Podcast" episodes on the home page (`spotify_episode` ID, `apple_episode` ID or self-hosted `audio`); section hidden while empty
 
 ### Layouts & includes
-- `_layouts/default.html` — base layout; loads Inter font, Tailwind CSS, Alpine.js CDN, jekyll-seo-tag
+- `_layouts/default.html` — base layout; loads Tailwind CSS (incl. local fonts), local Alpine.js, jekyll-seo-tag
 - `_layouts/page.html` — simple content page with page-hero header section (extends default)
 - `_includes/header.html` — sticky header with Alpine.js mobile menu (`x-data="{ open: false }"`)
 - `_includes/footer.html` — dark footer with service list from `_data/services.yml`
