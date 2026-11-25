@@ -1,0 +1,17 @@
+# Podcast episodes shown on the home page ("Caro im Podcast").
+# The section is hidden automatically while this list is empty.
+# Each entry needs a title and one of:
+#   spotify_episode: Spotify episode ID (from open.spotify.com/episode/<ID>)
+#   apple_episode:   Apple Podcasts episode ID (the ?i=<ID> part of the podcasts.apple.com link)
+#   audio:           URL or path of a self-hosted MP3, e.g. "/assets/audio/folge-1.mp3"
+#
+# CARO-37: The two episodes with Uwe in "Agility auf´s Ohr" (Jan Dießner) are no
+# longer playable: Spotify returns 404, and the audio behind the Apple entries was
+# deleted at the host (anchor.fm). Uncomment once they are online again, or switch
+# to audio: if we get the files.
+#
+# - title: "Uwe Carolus – zu Gast bei „Agility auf´s Ohr“ (Teil 1)"
+#   apple_episode: "1000582989389"
+# - title: "Uwe Carolus 2.0 – zu Gast bei „Agility auf´s Ohr“ (Teil 2)"
+#   apple_episode: "1000583508444"
+[]
