@@ -8,5 +8,7 @@
 # CARO-37: The original Spotify/Apple episodes of "Agility auf´s Ohr" (Jan Dießner)
 # are no longer playable (audio deleted at anchor.fm), so we host the file ourselves.
 
-- title: "Uwe Carolus – zu Gast bei „Agility auf´s Ohr“"
-  audio: "/assets/audio/agility-aufs-ohr.mp3"
+- title: "Uwe Carolus – zu Gast bei „Agility auf´s Ohr“ (Teil 1)"
+  audio: "/assets/audio/agility-aufs-ohr-teil-1.mp3"
+- title: "Uwe Carolus 2.0 – zu Gast bei „Agility auf´s Ohr“ (Teil 2)"
+  audio: "/assets/audio/agility-aufs-ohr-teil-2.mp3"
